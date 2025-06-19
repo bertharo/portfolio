@@ -1,0 +1,53 @@
+.blogSection {
+  background: white;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.blogTitle {
+  color: #282c34;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post {
+  border-left: 4px solid #61dafb;
+  padding-left: 1rem;
+  background: #f7fafd;
+  border-radius: 4px;
+}
+
+.postTitle {
+  margin: 0 0 0.5rem 0;
+  color: #282c34;
+}
+
+.postDate {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.postExcerpt {
+  color: #444;
+}
+
+@media (max-width: 600px) {
+  .blogSection {
+    padding: 1rem;
+  }
+  .posts {
+    gap: 1rem;
+  }
+  .post {
+    padding-left: 0.5rem;
+  }
+} 

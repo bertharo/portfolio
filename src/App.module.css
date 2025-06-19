@@ -1,0 +1,70 @@
+:root {
+  --color-bg: #f9f9f9;
+  --color-header-bg: #282c34;
+  --color-header-text: #fff;
+  --color-section-bg: #fff;
+  --color-section-title: #282c34;
+  --color-section-text: #444;
+  --color-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.dark {
+  --color-bg: #181a1b;
+  --color-header-bg: #23272f;
+  --color-header-text: #fff;
+  --color-section-bg: #23272f;
+  --color-section-title: #fff;
+  --color-section-text: #d1d5db;
+  --color-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+  min-height: 100vh;
+  transition: background 0.3s;
+}
+
+.header {
+  background-color: var(--color-header-bg);
+  padding: 2rem;
+  color: var(--color-header-text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  background: var(--color-section-bg);
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--color-shadow);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.sectionTitle {
+  color: var(--color-section-title);
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.sectionText {
+  color: var(--color-section-text);
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 1rem;
+  }
+  .section {
+    padding: 1rem;
+  }
+} 
