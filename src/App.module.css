@@ -21,16 +21,24 @@
 .app {
   text-align: center;
   font-family: Arial, sans-serif;
-  background: var(--color-bg);
+  background: #fff;
   min-height: 100vh;
-  transition: background 0.3s;
+  color: #111;
 }
 
 .header {
-  background-color: var(--color-header-bg);
+  background: #111;
   padding: 2rem;
-  color: var(--color-header-text);
-  transition: background 0.3s, color 0.3s;
+  color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.mainTitle {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  margin: 0;
 }
 
 .main {
@@ -40,24 +48,24 @@
 }
 
 .section {
-  background: var(--color-section-bg);
+  background: #fff;
   margin: 2rem 0;
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: var(--color-shadow);
-  transition: background 0.3s, box-shadow 0.3s;
+  border-radius: 0;
+  border: 1px solid #e5e5e5;
+  box-shadow: none;
 }
 
 .sectionTitle {
-  color: var(--color-section-title);
+  color: #111;
   margin-bottom: 1rem;
-  transition: color 0.3s;
+  font-weight: bold;
+  letter-spacing: 0.02em;
 }
 
 .sectionText {
-  color: var(--color-section-text);
+  color: #222;
   line-height: 1.6;
-  transition: color 0.3s;
 }
 
 @media (max-width: 600px) {
@@ -66,5 +74,8 @@
   }
   .section {
     padding: 1rem;
+  }
+  .mainTitle {
+    font-size: 2rem;
   }
 } 
