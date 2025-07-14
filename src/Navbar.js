@@ -14,11 +14,9 @@ const Navbar = () => {
         <span className={styles.menuIcon}>&#9776;</span>
       </button>
       <ul className={`${styles.navList} ${open ? styles.open : ''}`}>
-        <li><a className={styles.navLink} href="#news"><strong>NEWS</strong></a></li>
-        <li><a className={styles.navLink} href="#projects"><strong>PROJECTS</strong></a></li>
         <li><a className={styles.navLink} href="#about"><strong>ABOUT ME</strong></a></li>
-        <li><a className={styles.navLink} href="#blog"><strong>BLOG</strong></a></li>
-        <li><a className={styles.navLink} href="#contact"><strong>CONTACT ME</strong></a></li>
+        <li><a className={styles.navLink} href="#featured"><strong>FEATURED ON</strong></a></li>
+        <li><a className={styles.navLink} href="#projects"><strong>PROJECTS</strong></a></li>
       </ul>
     </nav>
   );
