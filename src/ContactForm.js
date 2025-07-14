@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import styles from './ContactForm.module.css';
+import emailjs from 'emailjs-com';
+
+const SERVICE_ID = 'service_kvbefrp';
+const TEMPLATE_ID = 'template_og52uqc';
+const PUBLIC_KEY = 'wHYeE_K-pDAIJqlPz';
 
 const ContactForm = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
     setError('');
+    setSuccess('');
   };
 
   const handleSubmit = e => {
@@ -16,14 +24,27 @@ const ContactForm = () => {
       setError('Please fill in all fields.');
       return;
     }
-    alert('Thank you for your message!');
-    setForm({ name: '', email: '', message: '' });
+    setLoading(true);
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+      from_name: form.name,
+      from_email: form.email,
+      message: form.message,
+    }, PUBLIC_KEY)
+      .then(() => {
+        setSuccess('Thank you for your message!');
+        setForm({ name: '', email: '', message: '' });
+        setLoading(false);
+      })
+      .catch(() => {
+        setError('Something went wrong. Please try again later.');
+        setLoading(false);
+      });
   };
 
   return (
     <form className={styles.contactForm} onSubmit={handleSubmit}>
-      <h2 className={styles.formTitle}>Contact Me</h2>
       {error && <div className={styles.error}>{error}</div>}
+      {success && <div className={styles.success}>{success}</div>}
       <label className={styles.label}>
         Name
         <input
@@ -53,7 +74,7 @@ const ContactForm = () => {
           onChange={handleChange}
         />
       </label>
-      <button className={styles.button} type="submit">Send</button>
+      <button className={styles.button} type="submit" disabled={loading}>{loading ? 'Sending...' : 'Send'}</button>
     </form>
   );
 };
