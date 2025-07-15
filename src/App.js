@@ -74,7 +74,7 @@ function App() {
           </h2>
           <div style={{ lineHeight: '1.7', color: '#333' }}>
             <p style={{ marginBottom: '1.5rem' }}>
-              I'm a senior product manager with over 10 years of experience building and scaling software products. I specialize in solving complex business problems and turning ideas into products that people actually use. My expertise spans enterprise SaaS, fintech, and consumer products.
+              I'm a product leader with over 10 years of experience building and scaling software products. I specialize in solving complex business problems and turning ideas into products that people actually use. My expertise spans enterprise SaaS, fintech, and consumer products.
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
               Throughout my career, I've led cross-functional teams, launched new product areas, and driven significant business growth. I've helped scale products to over $150MM ARR and boosted user engagement through data-driven design and strategic product decisions.
