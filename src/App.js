@@ -156,7 +156,7 @@ function App() {
           }}>
             Projects
           </h2>
-          <div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <a href="https://myhux.com/" target="_blank" rel="noopener noreferrer" style={{ 
               color: '#111',
               textDecoration: 'none',
@@ -165,6 +165,15 @@ function App() {
               transition: 'opacity 0.2s'
             }}>
               Hux: Social Media Without Ads
+            </a>
+            <a href="https://analytics-dashboard-kohl-three.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ 
+              color: '#111',
+              textDecoration: 'none',
+              fontSize: '1rem',
+              fontWeight: '400',
+              transition: 'opacity 0.2s'
+            }}>
+              Analytics Dashboard
             </a>
           </div>
         </section>
