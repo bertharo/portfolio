@@ -6,34 +6,6 @@
   z-index: 10;
 }
 
-.menuButton {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: #1a1a1a;
-  cursor: pointer;
-  position: fixed;
-  top: 1.5rem;
-  right: 2rem;
-  z-index: 100;
-  background: #fff;
-  padding: 0.5rem 0.8rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  min-width: 44px;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menuIcon {
-  display: inline-block;
-  font-size: 1.5rem;
-  line-height: 1;
-}
-
 .navList {
   list-style: none;
   display: flex;
@@ -41,38 +13,6 @@
   gap: 2rem;
   margin: 0;
   padding: 0;
-  transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .menuButton {
-    display: flex;
-    top: 1.25rem;
-    right: 1.5rem;
-  }
-  .navList {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
-    background: #fff;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    max-height: 0;
-    overflow: hidden;
-    border-bottom: 1px solid #e5e5e5;
-    z-index: 1;
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  .navList.open {
-    max-height: 400px;
-    padding: 1rem 0;
-    border-bottom: 1px solid #e5e5e5;
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .navLink {
@@ -82,10 +22,6 @@
   transition: all 0.2s ease;
   border-bottom: 2px solid transparent;
   padding: 0.5rem 0;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 0.9rem;
 }
 
@@ -94,17 +30,8 @@
 }
 
 @media (max-width: 600px) {
-  .menuButton {
-    top: 1rem;
-    right: 1rem;
-    padding: 0.4rem 0.6rem;
-    font-size: 1.3rem;
-  }
   .navList {
-    gap: 1rem;
-  }
-  .navList.open {
-    padding: 0.75rem 0;
+    gap: 1.5rem;
   }
   .navLink {
     font-size: 0.85rem;
@@ -113,17 +40,8 @@
 }
 
 @media (max-width: 480px) {
-  .menuButton {
-    top: 0.75rem;
-    right: 0.75rem;
-    padding: 0.3rem 0.5rem;
-    font-size: 1.2rem;
-  }
   .navList {
-    gap: 0.75rem;
-  }
-  .navList.open {
-    padding: 0.5rem 0;
+    gap: 1rem;
   }
   .navLink {
     font-size: 0.8rem;
