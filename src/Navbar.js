@@ -14,9 +14,9 @@ const Navbar = () => {
         <span className={styles.menuIcon}>&#9776;</span>
       </button>
       <ul className={`${styles.navList} ${open ? styles.open : ''}`}>
-        <li><a className={styles.navLink} href="#about"><strong>ABOUT ME</strong></a></li>
-        <li><a className={styles.navLink} href="#featured"><strong>FEATURED ON</strong></a></li>
-        <li><a className={styles.navLink} href="#projects"><strong>PROJECTS</strong></a></li>
+        <li><a className={styles.navLink} href="#about">About</a></li>
+        <li><a className={styles.navLink} href="#featured">Featured</a></li>
+        <li><a className={styles.navLink} href="#projects">Projects</a></li>
       </ul>
     </nav>
   );
