@@ -30,7 +30,7 @@ function App() {
             marginBottom: '2rem',
             fontWeight: '300'
           }}>
-            Product Manager & Boston Marathon Qualifier
+            Product Leader & Boston Marathoner
           </p>
           <div style={{ 
             display: 'flex', 
