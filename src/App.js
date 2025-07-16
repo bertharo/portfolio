@@ -175,6 +175,15 @@ function App() {
             }}>
               Analytics Dashboard
             </a>
+            <a href="https://aige.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ 
+              color: '#111',
+              textDecoration: 'none',
+              fontSize: '1rem',
+              fontWeight: '400',
+              transition: 'opacity 0.2s'
+            }}>
+              AIGE
+            </a>
           </div>
         </section>
       </main>
