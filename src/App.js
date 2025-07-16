@@ -56,6 +56,16 @@ function App() {
             }} aria-label="Strava">
               Strava
             </a>
+            <span style={{ color: '#fff', opacity: 0.5 }}>•</span>
+            <a href="https://github.com/bertharo" target="_blank" rel="noopener noreferrer" style={{ 
+              color: '#fff',
+              textDecoration: 'none',
+              fontSize: '0.9rem',
+              opacity: 0.8,
+              transition: 'opacity 0.2s'
+            }} aria-label="GitHub">
+              GitHub
+            </a>
           </div>
         </div>
       </header>
