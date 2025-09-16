@@ -194,6 +194,15 @@ function App() {
             }}>
               AIGE
             </a>
+            <a href="https://schools-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ 
+              color: '#111',
+              textDecoration: 'none',
+              fontSize: '1rem',
+              fontWeight: '400',
+              transition: 'opacity 0.2s'
+            }}>
+              OUSD School Finder
+            </a>
           </div>
         </section>
       </main>
