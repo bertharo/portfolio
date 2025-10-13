@@ -13,7 +13,7 @@ const Projects = () => {
       title: "State versus State Analysis",
       description: "An interactive data visualization tool comparing key metrics and statistics across different U.S. states. Explore demographic, economic, and social indicators to understand regional differences and trends.",
       url: "https://musical-dieffenbachia-e5cb4a.netlify.app/",
-      image: "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=800&h=600&fit=crop"
+      image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop"
     },
     {
       title: "Analytics Dashboard",
