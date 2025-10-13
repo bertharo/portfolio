@@ -1,6 +1,7 @@
 import styles from './App.module.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Projects from './Projects';
 
 function App() {
   return (
@@ -156,7 +157,7 @@ function App() {
           </div>
         </section>
 
-        {/* Projects Section - Clean list */}
+        {/* Projects Section - Card-based layout */}
         <section id="projects" className={styles.section} style={{ marginBottom: '3rem' }}>
           <h2 className={styles.sectionTitle} style={{ 
             fontSize: '1.5rem', 
@@ -166,44 +167,7 @@ function App() {
           }}>
             Projects
           </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <a href="https://myhux.com/" target="_blank" rel="noopener noreferrer" style={{ 
-              color: '#111',
-              textDecoration: 'none',
-              fontSize: '1rem',
-              fontWeight: '400',
-              transition: 'opacity 0.2s'
-            }}>
-              Hux: Social Media Without Ads
-            </a>
-            <a href="https://analytics-dashboard-kohl-three.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ 
-              color: '#111',
-              textDecoration: 'none',
-              fontSize: '1rem',
-              fontWeight: '400',
-              transition: 'opacity 0.2s'
-            }}>
-              Analytics Dashboard
-            </a>
-            <a href="https://aige.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ 
-              color: '#111',
-              textDecoration: 'none',
-              fontSize: '1rem',
-              fontWeight: '400',
-              transition: 'opacity 0.2s'
-            }}>
-              AIGE
-            </a>
-            <a href="https://schools-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ 
-              color: '#111',
-              textDecoration: 'none',
-              fontSize: '1rem',
-              fontWeight: '400',
-              transition: 'opacity 0.2s'
-            }}>
-              OUSD School Finder
-            </a>
-          </div>
+          <Projects />
         </section>
       </main>
       <Footer />
