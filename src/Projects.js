@@ -32,6 +32,12 @@ const Projects = () => {
       description: "A user-friendly tool to help families find the perfect school in Oakland. Features interactive maps, detailed school information, and comparison tools to make informed educational decisions.",
       url: "https://schools-eosin.vercel.app/",
       image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=600&fit=crop"
+    },
+    {
+      title: "RunGPT",
+      description: "A modern authentication platform with a clean and intuitive sign-in interface. Built with a focus on user experience and security, providing seamless access management for users.",
+      url: "https://roger-black.vercel.app/",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
     }
   ];
 
