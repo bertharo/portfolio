@@ -35,7 +35,7 @@ const Projects = () => {
     },
     {
       title: "RunGPT",
-      description: "A modern authentication platform with a clean and intuitive sign-in interface. Built with a focus on user experience and security, providing seamless access management for users.",
+      description: "An AI-powered running companion built with ChatGPT, designed to help runners track their progress, get personalized training advice, and achieve their running goals. Combines the power of AI with running expertise.",
       url: "https://roger-black.vercel.app/",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
     }
