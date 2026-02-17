@@ -31,7 +31,7 @@ function App() {
             marginBottom: '2rem',
             fontWeight: '300'
           }}>
-            Product Leader & Boston Marathoner
+            Product Leader, Boston Marathoner & Podcast Host
           </p>
           <div style={{ 
             display: 'flex', 
@@ -131,6 +131,32 @@ function App() {
                 <div style={{ fontSize: '0.9rem', color: '#666' }}>Fintech</div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Podcast Section */}
+        <section id="podcast" className={styles.section} style={{ marginBottom: '3rem' }}>
+          <h2 className={styles.sectionTitle} style={{ 
+            fontSize: '1.5rem', 
+            fontWeight: '400', 
+            marginBottom: '1.5rem',
+            color: '#111'
+          }}>
+            Podcast
+          </h2>
+          <div style={{ marginBottom: '1.5rem' }}>
+            <p style={{ marginBottom: '1rem', color: '#333', lineHeight: '1.7' }}>
+              I host a podcast focused on startups, featuring conversations with founders and entrepreneurs about building companies, product development, and the journey of bringing ideas to life.
+            </p>
+            <a href="https://open.spotify.com/episode/4IPwB35TmY5Ifeay0CNmOa?si=difNGTeBRz2VOv49ICEu-g&nd=1&dlsi=2b7a9b8d228e4d52" target="_blank" rel="noopener noreferrer" style={{ 
+              color: '#111',
+              textDecoration: 'none',
+              fontSize: '1rem',
+              fontWeight: '400',
+              transition: 'opacity 0.2s'
+            }}>
+              Latest Episode: Built AI-First: ololand.ai →
+            </a>
           </div>
         </section>
 

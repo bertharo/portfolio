@@ -38,6 +38,12 @@ const Projects = () => {
       description: "An AI-powered running companion built with ChatGPT, designed to help runners track their progress, get personalized training advice, and achieve their running goals. Combines the power of AI with running expertise.",
       url: "https://roger-black.vercel.app/",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Tranare",
+      description: "A native iOS running app that seamlessly integrates with Strava to track your latest runs. Features AI-powered coaching that analyzes your running data and provides personalized training advice tailored to your specific running goals.",
+      url: "https://apps.apple.com/app/tranare",
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop"
     }
   ];
 
