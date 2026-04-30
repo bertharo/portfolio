@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://bertharo.com",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -22,7 +23,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "vercel-build": "npm run build"
+    "vercel-build": "npm run build",
+    "generate-memo": "node scripts/generate-ai-memo.js"
   },
   "eslintConfig": {
     "extends": [

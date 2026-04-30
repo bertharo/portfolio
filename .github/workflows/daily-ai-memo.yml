@@ -1,0 +1,47 @@
+name: Daily AI Memo
+
+on:
+  schedule:
+    # Runs every day at 7:05 AM UTC
+    - cron: '5 7 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate-memo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate today's AI memo
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-ai-memo.js
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet src/data/aiMemos.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push memo
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "AI Memo Bot"
+          git config user.email "actions@github.com"
+          git add src/data/aiMemos.json
+          git commit -m "memo: AI Daily Memo for $(date +%F)"
+          git push

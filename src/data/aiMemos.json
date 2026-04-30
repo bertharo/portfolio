@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "date": "2026-04-29",
+    "title": "AI Agents Are Taking Over Workflows — Here's What to Do Today",
+    "summary": "AI is no longer a standalone tool — it's becoming the platform itself. Multi-agent systems that cooperate across tasks are going mainstream, model performance has hit near-100% on software engineering benchmarks, and framework adoption doubled year-over-year. If you're a PM, builder, or curious professional, now is the moment to level up fast.",
+    "trends": [
+      {
+        "headline": "Multi-agent systems are the next frontier",
+        "detail": "Teams of AI agents cooperating to complete complex, multi-step goals are moving from research to production. NVIDIA Nemotron and similar systems can take actions, interact with environments, and collaborate with both human and AI colleagues."
+      },
+      {
+        "headline": "AI hits PhD-level performance across science & math",
+        "detail": "According to Stanford's 2026 AI Index, top models now meet or exceed human expert performance on PhD-level science, math, and language benchmarks. Software engineering benchmark scores jumped from ~60% in 2024 to nearly 100% in 2025."
+      },
+      {
+        "headline": "Anthropic leads the model performance race — for now",
+        "detail": "As of March 2026, Anthropic leads in model rankings, trailed by xAI, Google, and OpenAI. Chinese models like DeepSeek and Alibaba are closing the gap quickly."
+      },
+      {
+        "headline": "AI framework adoption nearly doubled",
+        "detail": "The share of organizations adopting AI agent frameworks jumped from ~9% in early 2025 to nearly 18% by early 2026. This is the fastest infrastructure adoption cycle since cloud computing."
+      },
+      {
+        "headline": "AI is shifting from tool to platform",
+        "detail": "AI is rewiring how work gets done — moving from isolated opt-in tools to platforms sitting at the center of workflows, decisions, and customer journeys across industries."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Try Claude Code or Cursor for 30 minutes",
+        "description": "Pick one small, real task — write a script, draft a spec, debug something — and do it entirely with an AI coding assistant. Don't overthink it. The goal is to feel the loop, not ship production code."
+      },
+      {
+        "label": "Read the 2026 MIT Technology Review AI piece",
+        "description": "MIT Tech Review published '10 Things That Matter in AI Right Now' this month. It's one of the best overviews of where the field actually is vs. the hype. Read it with a highlighter."
+      },
+      {
+        "label": "Map one workflow you own to an AI agent",
+        "description": "Think about a repetitive task in your job: weekly status updates, user research synthesis, competitive monitoring. Sketch out how a multi-agent system could own it end-to-end. You don't have to build it — just think it through."
+      },
+      {
+        "label": "Sign up for Perplexity or NotebookLM and use it for research today",
+        "description": "Both tools are cited as top PM picks for 2026. Perplexity gives cited, up-to-date answers. NotebookLM lets you chat with a stack of documents. Replace one Google search session today with one of these."
+      },
+      {
+        "label": "Follow one AI researcher or lab on your preferred platform",
+        "description": "Staying current means following people building the frontier: Andrej Karpathy, Yann LeCun, Ilya Sutskever, or the official channels for Anthropic, DeepMind, and OpenAI. One follow today compounds over time."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "date": "2026-04-30",
+    "title": "Musk vs Altman Trial Heats Up as GPT-5.5 Reshapes AI",
+    "summary": "The Musk v. OpenAI trial enters its third day in Oakland with heated cross-examination, while OpenAI's GPT-5.5 (released April 23) and NVIDIA's Nemotron 3 Nano Omni (April 28) reshape the agentic AI landscape. Meanwhile, OpenAI reportedly missed revenue targets, sending AI infrastructure stocks lower and raising questions about whether the $25B+ annualized revenue pace is sustainable.",
+    "trends": [
+      {
+        "headline": "Musk-Altman trial could reshape AI's future",
+        "detail": "Elon Musk testified for a second day in Oakland federal court, accusing OpenAI of betraying its nonprofit mission. The trial, expected to last four weeks, could block OpenAI's planned IPO and force a return to nonprofit status — Musk is seeking up to $150 billion in damages."
+      },
+      {
+        "headline": "GPT-5.5 launches with agentic coding focus",
+        "detail": "OpenAI released GPT-5.5 ('Spud') on April 23 — just six weeks after GPT-5.4 — priced at $5/$30 per million input/output tokens via API. ChatGPT now has 900M+ weekly active users and 50M+ subscribers, though early benchmarks show Claude Opus 4.7 still winning head-to-head comparisons."
+      },
+      {
+        "headline": "NVIDIA ships open multimodal model for agents",
+        "detail": "NVIDIA released Nemotron 3 Nano Omni on April 28 via Hugging Face and 25+ platforms. The open-weight model unifies vision, audio, and language in one system for up to 9x more efficient AI agents, and is already being adopted by Palantir, Foxconn, and Docusign."
+      },
+      {
+        "headline": "OpenAI revenue miss rattles AI infrastructure stocks",
+        "detail": "The Wall Street Journal reported OpenAI missed internal growth and revenue projections, sparking a selloff in Oracle (-4%), Broadcom (-4%), and AMD (-3%). Anthropic is closing the gap at ~$19B annualized revenue, while Anthropic and Google Gemini gain enterprise share."
+      },
+      {
+        "headline": "April 2026 is the densest model release month ever",
+        "detail": "This month saw GPT-5.5, DeepSeek V4, Grok 4.3, Gemma 4, Llama 4, Kimi K2.6, and Claude Mythos (restricted to 50 orgs). Claude Sonnet 4.6 leads the GDPval-AA Elo benchmark at 1,633 points, and open-weight models now rival proprietary ones on most benchmarks."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Test GPT-5.5 against your current stack",
+        "description": "GPT-5.5 is now live in the API at $5/1M input tokens. Run your existing eval suite against it — OpenAI claims fewer tokens per task than GPT-5.4 at equal latency. Pay special attention to the 'different safeguards' on the API version, which may cause regressions on agentic workloads."
+      },
+      {
+        "label": "Evaluate NVIDIA Nemotron 3 Nano Omni",
+        "description": "Download the open-weight model from Hugging Face today. It tops six leaderboards for document intelligence and audio/video understanding, and lets you replace separate vision, speech, and language models with one system. Ideal if you're building multimodal agents or processing screen recordings."
+      },
+      {
+        "label": "Audit your AI provider concentration risk",
+        "description": "With OpenAI missing revenue targets and Anthropic gaining enterprise traction, now is the time to test multi-provider setups. Try routing tasks to Claude Sonnet 4.6 for coding, Gemini Flash for lightweight queries, and GPT-5.5 for agentic workflows. Diversification lowers cost and reduces single-vendor lock-in."
+      },
+      {
+        "label": "Follow the Musk v. OpenAI trial daily",
+        "description": "The trial outcome could block OpenAI's IPO, force restructuring, or disrupt its $300B Oracle partnership. Track daily recaps on CNBC or The Verge. If your product depends on OpenAI, sketch a contingency plan for API continuity in a worst-case corporate restructuring scenario."
+      },
+      {
+        "label": "Try a PM vibe-coding prototype this week",
+        "description": "Tools like Cursor, Replit, and v0 now let PMs build interactive prototypes in under 30 minutes. Pick one backlogged feature idea, describe it in natural language, and generate a working demo. The 2026 PM stack is shifting from 'write specs' to 'show working artifacts' — start building the muscle now."
+      }
+    ]
+  }
+]

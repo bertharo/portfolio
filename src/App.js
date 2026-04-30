@@ -2,6 +2,7 @@ import styles from './App.module.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Projects from './Projects';
+import Blog from './Blog';
 
 function App() {
   return (
@@ -185,9 +186,9 @@ function App() {
 
         {/* Projects Section - Card-based layout */}
         <section id="projects" className={styles.section} style={{ marginBottom: '3rem' }}>
-          <h2 className={styles.sectionTitle} style={{ 
-            fontSize: '1.5rem', 
-            fontWeight: '400', 
+          <h2 className={styles.sectionTitle} style={{
+            fontSize: '1.5rem',
+            fontWeight: '400',
             marginBottom: '1.5rem',
             color: '#111'
           }}>
@@ -195,6 +196,9 @@ function App() {
           </h2>
           <Projects />
         </section>
+
+        {/* AI Daily Memo */}
+        <Blog />
       </main>
       <Footer />
     </div>

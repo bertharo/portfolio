@@ -8,6 +8,7 @@ const Navbar = () => {
         <li><a className={styles.navLink} href="#about">About</a></li>
         <li><a className={styles.navLink} href="#featured">Featured</a></li>
         <li><a className={styles.navLink} href="#projects">Projects</a></li>
+        <li><a className={styles.navLink} href="#ai-memo">AI Memo</a></li>
       </ul>
     </nav>
   );
