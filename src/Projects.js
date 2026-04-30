@@ -10,13 +10,13 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
     },
     {
-      title: "State versus State Analysis",
+      title: "State Analysis Dashboard",
       description: "An interactive data visualization tool comparing key metrics and statistics across different U.S. states. Explore demographic, economic, and social indicators to understand regional differences and trends.",
       url: "https://musical-dieffenbachia-e5cb4a.netlify.app/",
       image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop"
     },
     {
-      title: "Analytics Dashboard",
+      title: "Workforce Job Trends",
       description: "A comprehensive analytics platform featuring real-time data visualization and insights. Designed to help teams make data-driven decisions with intuitive charts and customizable reporting tools.",
       url: "https://analytics-dashboard-kohl-three.vercel.app/",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
