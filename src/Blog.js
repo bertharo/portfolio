@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import memos from './data/aiMemos.json';
 import News from './News';
 
-const latest = memos[memos.length - 1];
+const sorted = [...memos].sort((a, b) => b.date.localeCompare(a.date));
 
 function formatDate(dateStr) {
   const [year, month, day] = dateStr.split('-').map(Number);
@@ -15,7 +15,15 @@ function formatDate(dateStr) {
 }
 
 const Blog = () => {
+  const [index, setIndex] = useState(0);
   const [checkedItems, setCheckedItems] = useState({});
+
+  const memo = sorted[index];
+  const isLatest = index === 0;
+  const isOldest = index === sorted.length - 1;
+
+  const goNewer = () => { setIndex(i => i - 1); setCheckedItems({}); };
+  const goOlder = () => { setIndex(i => i + 1); setCheckedItems({}); };
 
   const toggleCheck = (idx) => {
     setCheckedItems(prev => ({ ...prev, [idx]: !prev[idx] }));
@@ -33,9 +41,47 @@ const Blog = () => {
         }}>
           AI Daily Memo
         </h2>
-        <p style={{ fontSize: '0.85rem', color: '#999', margin: 0 }}>
-          Published {formatDate(latest.date)} · Stay current, stay sharp.
-        </p>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+          <p style={{ fontSize: '0.85rem', color: '#999', margin: 0 }}>
+            Published {formatDate(memo.date)} · Stay current, stay sharp.
+            {!isLatest && <span style={{ marginLeft: '0.5rem', color: '#bbb' }}>(archive)</span>}
+          </p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <button
+              onClick={goNewer}
+              disabled={isLatest}
+              style={{
+                background: 'none',
+                border: '1px solid #ddd',
+                borderRadius: '2px',
+                padding: '0.2rem 0.6rem',
+                fontSize: '0.8rem',
+                color: isLatest ? '#ccc' : '#555',
+                cursor: isLatest ? 'default' : 'pointer',
+              }}
+            >
+              ← Newer
+            </button>
+            <span style={{ fontSize: '0.8rem', color: '#bbb' }}>
+              {index + 1} / {sorted.length}
+            </span>
+            <button
+              onClick={goOlder}
+              disabled={isOldest}
+              style={{
+                background: 'none',
+                border: '1px solid #ddd',
+                borderRadius: '2px',
+                padding: '0.2rem 0.6rem',
+                fontSize: '0.8rem',
+                color: isOldest ? '#ccc' : '#555',
+                cursor: isOldest ? 'default' : 'pointer',
+              }}
+            >
+              Older →
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Memo Card */}
@@ -54,7 +100,7 @@ const Blog = () => {
           marginBottom: '0.75rem',
           lineHeight: '1.4'
         }}>
-          {latest.title}
+          {memo.title}
         </h3>
         <p style={{
           color: '#444',
@@ -62,7 +108,7 @@ const Blog = () => {
           marginBottom: '1.75rem',
           fontSize: '0.98rem'
         }}>
-          {latest.summary}
+          {memo.summary}
         </p>
 
         {/* Divider */}
@@ -80,7 +126,7 @@ const Blog = () => {
           What's Happening
         </h4>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '1.75rem' }}>
-          {latest.trends.map((trend, i) => (
+          {memo.trends.map((trend, i) => (
             <div key={i} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
               <span style={{
                 display: 'inline-block',
@@ -118,7 +164,7 @@ const Blog = () => {
           Today's Action Items
         </h4>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
-          {latest.actionItems.map((item, i) => (
+          {memo.actionItems.map((item, i) => (
             <div
               key={i}
               onClick={() => toggleCheck(i)}
