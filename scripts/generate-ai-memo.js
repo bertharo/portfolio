@@ -8,7 +8,6 @@
 const Anthropic = require('@anthropic-ai/sdk');
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
 
 const MEMOS_PATH = path.join(__dirname, '../src/data/aiMemos.json');
 
@@ -90,23 +89,9 @@ Requirements:
     throw e;
   }
 
-  // Prepend new memo at the end (newest last, component reads last entry)
   existing.push(memoJson);
   fs.writeFileSync(MEMOS_PATH, JSON.stringify(existing, null, 2));
   console.log(`Memo saved: "${memoJson.title}"`);
-
-  // Commit and push to GitHub so the site deploys
-  try {
-    execSync('git add src/data/aiMemos.json', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
-    execSync(
-      `git commit -m "memo: AI Daily Memo for ${today}"`,
-      { cwd: path.join(__dirname, '..'), stdio: 'inherit' }
-    );
-    execSync('git push', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
-    console.log('Pushed to GitHub. Site will redeploy automatically.');
-  } catch (gitErr) {
-    console.error('Git push failed (memo was still saved locally):', gitErr.message);
-  }
 }
 
 generateMemo().catch(err => {

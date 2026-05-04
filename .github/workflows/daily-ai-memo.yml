@@ -27,6 +27,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Verify API key is set
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "ERROR: ANTHROPIC_API_KEY is empty or not set"
+            exit 1
+          else
+            echo "ANTHROPIC_API_KEY is set (length: ${#ANTHROPIC_API_KEY})"
+          fi
+
       - name: Generate today's AI memo
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -35,7 +46,7 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet src/data/aiMemos.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff HEAD --quiet src/data/aiMemos.json || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push memo
         if: steps.changes.outputs.changed == 'true'
