@@ -2,8 +2,8 @@
   {
     "id": 1,
     "date": "2026-04-29",
-    "title": "AI Agents Are Taking Over Workflows — Here's What to Do Today",
-    "summary": "AI is no longer a standalone tool — it's becoming the platform itself. Multi-agent systems that cooperate across tasks are going mainstream, model performance has hit near-100% on software engineering benchmarks, and framework adoption doubled year-over-year. If you're a PM, builder, or curious professional, now is the moment to level up fast.",
+    "title": "AI Agents Are Taking Over Workflows \u2014 Here's What to Do Today",
+    "summary": "AI is no longer a standalone tool \u2014 it's becoming the platform itself. Multi-agent systems that cooperate across tasks are going mainstream, model performance has hit near-100% on software engineering benchmarks, and framework adoption doubled year-over-year. If you're a PM, builder, or curious professional, now is the moment to level up fast.",
     "trends": [
       {
         "headline": "Multi-agent systems are the next frontier",
@@ -14,7 +14,7 @@
         "detail": "According to Stanford's 2026 AI Index, top models now meet or exceed human expert performance on PhD-level science, math, and language benchmarks. Software engineering benchmark scores jumped from ~60% in 2024 to nearly 100% in 2025."
       },
       {
-        "headline": "Anthropic leads the model performance race — for now",
+        "headline": "Anthropic leads the model performance race \u2014 for now",
         "detail": "As of March 2026, Anthropic leads in model rankings, trailed by xAI, Google, and OpenAI. Chinese models like DeepSeek and Alibaba are closing the gap quickly."
       },
       {
@@ -23,13 +23,13 @@
       },
       {
         "headline": "AI is shifting from tool to platform",
-        "detail": "AI is rewiring how work gets done — moving from isolated opt-in tools to platforms sitting at the center of workflows, decisions, and customer journeys across industries."
+        "detail": "AI is rewiring how work gets done \u2014 moving from isolated opt-in tools to platforms sitting at the center of workflows, decisions, and customer journeys across industries."
       }
     ],
     "actionItems": [
       {
         "label": "Try Claude Code or Cursor for 30 minutes",
-        "description": "Pick one small, real task — write a script, draft a spec, debug something — and do it entirely with an AI coding assistant. Don't overthink it. The goal is to feel the loop, not ship production code."
+        "description": "Pick one small, real task \u2014 write a script, draft a spec, debug something \u2014 and do it entirely with an AI coding assistant. Don't overthink it. The goal is to feel the loop, not ship production code."
       },
       {
         "label": "Read the 2026 MIT Technology Review AI piece",
@@ -37,7 +37,7 @@
       },
       {
         "label": "Map one workflow you own to an AI agent",
-        "description": "Think about a repetitive task in your job: weekly status updates, user research synthesis, competitive monitoring. Sketch out how a multi-agent system could own it end-to-end. You don't have to build it — just think it through."
+        "description": "Think about a repetitive task in your job: weekly status updates, user research synthesis, competitive monitoring. Sketch out how a multi-agent system could own it end-to-end. You don't have to build it \u2014 just think it through."
       },
       {
         "label": "Sign up for Perplexity or NotebookLM and use it for research today",
@@ -57,11 +57,11 @@
     "trends": [
       {
         "headline": "Musk-Altman trial could reshape AI's future",
-        "detail": "Elon Musk testified for a second day in Oakland federal court, accusing OpenAI of betraying its nonprofit mission. The trial, expected to last four weeks, could block OpenAI's planned IPO and force a return to nonprofit status — Musk is seeking up to $150 billion in damages."
+        "detail": "Elon Musk testified for a second day in Oakland federal court, accusing OpenAI of betraying its nonprofit mission. The trial, expected to last four weeks, could block OpenAI's planned IPO and force a return to nonprofit status \u2014 Musk is seeking up to $150 billion in damages."
       },
       {
         "headline": "GPT-5.5 launches with agentic coding focus",
-        "detail": "OpenAI released GPT-5.5 ('Spud') on April 23 — just six weeks after GPT-5.4 — priced at $5/$30 per million input/output tokens via API. ChatGPT now has 900M+ weekly active users and 50M+ subscribers, though early benchmarks show Claude Opus 4.7 still winning head-to-head comparisons."
+        "detail": "OpenAI released GPT-5.5 ('Spud') on April 23 \u2014 just six weeks after GPT-5.4 \u2014 priced at $5/$30 per million input/output tokens via API. ChatGPT now has 900M+ weekly active users and 50M+ subscribers, though early benchmarks show Claude Opus 4.7 still winning head-to-head comparisons."
       },
       {
         "headline": "NVIDIA ships open multimodal model for agents",
@@ -79,7 +79,7 @@
     "actionItems": [
       {
         "label": "Test GPT-5.5 against your current stack",
-        "description": "GPT-5.5 is now live in the API at $5/1M input tokens. Run your existing eval suite against it — OpenAI claims fewer tokens per task than GPT-5.4 at equal latency. Pay special attention to the 'different safeguards' on the API version, which may cause regressions on agentic workloads."
+        "description": "GPT-5.5 is now live in the API at $5/1M input tokens. Run your existing eval suite against it \u2014 OpenAI claims fewer tokens per task than GPT-5.4 at equal latency. Pay special attention to the 'different safeguards' on the API version, which may cause regressions on agentic workloads."
       },
       {
         "label": "Evaluate NVIDIA Nemotron 3 Nano Omni",
@@ -95,7 +95,7 @@
       },
       {
         "label": "Try a PM vibe-coding prototype this week",
-        "description": "Tools like Cursor, Replit, and v0 now let PMs build interactive prototypes in under 30 minutes. Pick one backlogged feature idea, describe it in natural language, and generate a working demo. The 2026 PM stack is shifting from 'write specs' to 'show working artifacts' — start building the muscle now."
+        "description": "Tools like Cursor, Replit, and v0 now let PMs build interactive prototypes in under 30 minutes. Pick one backlogged feature idea, describe it in natural language, and generate a working demo. The 2026 PM stack is shifting from 'write specs' to 'show working artifacts' \u2014 start building the muscle now."
       }
     ]
   },
@@ -103,49 +103,49 @@
     "id": 3,
     "date": "2026-05-04",
     "title": "Claude Mythos, GPT-5.5, DeepSeek V4: Model Wars Accelerate",
-    "summary": "<cite index=\"13-3,13-4\">Between April 20 and April 24, frontier models were released rapidly: Moonshot AI released Kimi K2.6, OpenAI released GPT-5.5, DeepSeek released their 1.6 Trillion parameter DeepSeek V4, and xAI released Grok 4.3.</cite> <cite index=\"19-1,19-4\">Anthropic confirmed Claude Mythos 5 but withheld it from public release after triggering ASL-4 safety protocols.</cite> <cite index=\"5-2,5-7\">May 2026 confirms AI is entering a harsher phase focused on compute access, regulation, and distribution, not shiny demos.</cite>",
+    "summary": "Between April 20 and April 24, frontier models were released rapidly: Moonshot AI released Kimi K2.6, OpenAI released GPT-5.5, DeepSeek released their 1.6 Trillion parameter DeepSeek V4, and xAI released Grok 4.3. Anthropic confirmed Claude Mythos 5 but withheld it from public release after triggering ASL-4 safety protocols. May 2026 confirms AI is entering a harsher phase focused on compute access, regulation, and distribution, not shiny demos.",
     "trends": [
       {
         "headline": "Frontier Models Locked Behind Safety Walls",
-        "detail": "<cite index=\"19-1\">Claude Mythos 5 will not be released publicly or via standard API.</cite> <cite index=\"17-24,17-28\">Project Glasswing limits access to ~50 partner organizations including AWS, Apple, Microsoft, Google, and NVIDIA for defensive vulnerability scanning.</cite> This signals capability thresholds triggering corporate gatekeeping."
+        "detail": "Claude Mythos 5 will not be released publicly or via standard API. Project Glasswing limits access to ~50 partner organizations including AWS, Apple, Microsoft, Google, and NVIDIA for defensive vulnerability scanning. This signals capability thresholds triggering corporate gatekeeping."
       },
       {
         "headline": "Open-Source Models Matching Proprietary Capability",
-        "detail": "<cite index=\"17-5,17-6\">Zhipu AI's GLM-5.1 reportedly beat Claude Opus 4.6 and GPT-5.4 on SWE-Bench Pro, with cost only limited by electricity expenses.</cite> <cite index=\"14-5\">Google's Gemma 4 31B ranks #3 globally on Arena AI among open models, released April 2 under Apache 2.0 with zero commercial restrictions.</cite>"
+        "detail": "Zhipu AI's GLM-5.1 reportedly beat Claude Opus 4.6 and GPT-5.4 on SWE-Bench Pro, with cost only limited by electricity expenses. Google's Gemma 4 31B ranks #3 globally on Arena AI among open models, released April 2 under Apache 2.0 with zero commercial restrictions."
       },
       {
         "headline": "Tech Giants Doubling Down on Infrastructure Spending",
-        "detail": "<cite index=\"4-20\">Meta announced AI capital expenditures of $115–135 billion for 2026, nearly double last year's spending.</cite> <cite index=\"19-24,19-25\">The U.S. faces a projected 9–18 gigawatt electricity shortfall by 2027 from AI data centre construction, prompting companies to pursue off-grid nuclear and gas strategies.</cite>"
+        "detail": "Meta announced AI capital expenditures of $115\u2013135 billion for 2026, nearly double last year's spending. The U.S. faces a projected 9\u201318 gigawatt electricity shortfall by 2027 from AI data centre construction, prompting companies to pursue off-grid nuclear and gas strategies."
       },
       {
         "headline": "Worker Resistance Meets Market Inevitability",
-        "detail": "<cite index=\"10-4\">80% of enterprise workers are avoiding or rejecting AI tools while 50% say managing money without AI will soon feel outdated.</cite> <cite index=\"10-2,10-3\">The backlash and inevitability are not competing stories—they're the same story told from different points on the adoption curve.</cite>"
+        "detail": "80% of enterprise workers are avoiding or rejecting AI tools while 50% say managing money without AI will soon feel outdated. The backlash and inevitability are not competing stories\u2014they're the same story told from different points on the adoption curve."
       },
       {
         "headline": "Agentic AI Reshaping Developer and PM Workflows",
-        "detail": "<cite index=\"6-4\">Coming next are teams of agents that cooperate to achieve far more complex goals, moving beyond single-agent browser automation.</cite> <cite index=\"27-3\">The PMs who win with AI aren't the ones who know the right prompts—they're the ones who build AI product management workflows that support their thinking.</cite>"
+        "detail": "Coming next are teams of agents that cooperate to achieve far more complex goals, moving beyond single-agent browser automation. The PMs who win with AI aren't the ones who know the right prompts\u2014they're the ones who build AI product management workflows that support their thinking."
       }
     ],
     "actionItems": [
       {
         "label": "Run Real Benchmarks Against Actual Workloads",
-        "description": "<cite index=\"14-4\">The question for anyone building in 2026 is not 'which model is best' but 'which model is best for MY budget and use case.'</cite> Stop comparing leaderboard scores. Test GPT-5.5, Claude Opus 4.6, and Gemini 3.1 Pro on your exact production task this week. Document cost-per-token, latency, and error rates. You'll likely find a 70%-as-capable model costs 50% less."
+        "description": "The question for anyone building in 2026 is not 'which model is best' but 'which model is best for MY budget and use case.' Stop comparing leaderboard scores. Test GPT-5.5, Claude Opus 4.6, and Gemini 3.1 Pro on your exact production task this week. Document cost-per-token, latency, and error rates. You'll likely find a 70%-as-capable model costs 50% less."
       },
       {
         "label": "Stress-Test Your AI Vendor Dependencies",
-        "description": "<cite index=\"5-9,5-10\">Compute is now a business risk—infrastructure owners can shape pricing, access, and product survival.</cite> Map which APIs you depend on. Check terms of service changes from the last 30 days. If OpenAI or Anthropic changes pricing or availability, can you switch models in 48 hours without rewriting code?"
+        "description": "Compute is now a business risk\u2014infrastructure owners can shape pricing, access, and product survival. Map which APIs you depend on. Check terms of service changes from the last 30 days. If OpenAI or Anthropic changes pricing or availability, can you switch models in 48 hours without rewriting code?"
       },
       {
         "label": "Prototype One Feature With Agentic Workflow",
-        "description": "<cite index=\"27-24,27-25\">Agentic workflows let AI handle repetitive research while you stay focused on strategy, and because context is persistent, research is tailored to your product.</cite> Pick one backlog item that involves data gathering or document synthesis. Build a 10-minute Langflow or LangChain agent to handle it. Time the improvement."
+        "description": "Agentic workflows let AI handle repetitive research while you stay focused on strategy, and because context is persistent, research is tailored to your product. Pick one backlog item that involves data gathering or document synthesis. Build a 10-minute Langflow or LangChain agent to handle it. Time the improvement."
       },
       {
         "label": "Assess Your Power and Cooling Strategy",
-        "description": "<cite index=\"19-24,19-25\">The U.S. faces a 9–18 GW electricity shortfall by 2027, prompting major tech companies to pursue off-grid nuclear and gas power strategies.</cite> If your AI roadmap involves on-prem inference at scale, contact your data center provider about power availability and redundancy. Cloud pricing will likely rise as demand compresses capacity."
+        "description": "The U.S. faces a 9\u201318 GW electricity shortfall by 2027, prompting major tech companies to pursue off-grid nuclear and gas power strategies. If your AI roadmap involves on-prem inference at scale, contact your data center provider about power availability and redundancy. Cloud pricing will likely rise as demand compresses capacity."
       },
       {
         "label": "Document Safety and Control Decisions Now",
-        "description": "<cite index=\"5-11,5-12\">Governance and regulation now affect sales—who controls the company, data, and review process matters to buyers.</cite> Write down your AI safety principles (data privacy, bias testing, override mechanisms). This becomes your competitive differentiator as enterprise buyers demand proof of responsible deployment."
+        "description": "Governance and regulation now affect sales\u2014who controls the company, data, and review process matters to buyers. Write down your AI safety principles (data privacy, bias testing, override mechanisms). This becomes your competitive differentiator as enterprise buyers demand proof of responsible deployment."
       }
     ]
   }

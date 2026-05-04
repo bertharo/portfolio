@@ -65,7 +65,8 @@ Requirements:
 - Base everything on real news from today or this week
 - Write for a professional audience: PMs, engineers, founders, and curious learners
 - Action items should be things someone can realistically do in 30 minutes or less
-- Return ONLY the raw JSON object, no markdown fences, no explanation`
+- Return ONLY the raw JSON object, no markdown fences, no explanation
+- Do NOT include any citation tags, footnotes, source references, or <cite> elements anywhere in the output`
       }
     ]
   });
@@ -89,6 +90,16 @@ Requirements:
     console.error('Failed to parse memo JSON:', textContent.text);
     throw e;
   }
+
+  // Strip <cite> wrapper tags injected by web_search, keeping the inner text
+  const stripCites = str => str.replace(/<cite[^>]*>(.*?)<\/cite>/gs, '$1').trim();
+  const cleanStrings = obj => {
+    if (typeof obj === 'string') return stripCites(obj);
+    if (Array.isArray(obj)) return obj.map(cleanStrings);
+    if (obj && typeof obj === 'object') return Object.fromEntries(Object.entries(obj).map(([k, v]) => [k, cleanStrings(v)]));
+    return obj;
+  };
+  memoJson = cleanStrings(memoJson);
 
   existing.push(memoJson);
   fs.writeFileSync(MEMOS_PATH, JSON.stringify(existing, null, 2));
