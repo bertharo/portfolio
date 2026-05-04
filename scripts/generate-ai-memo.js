@@ -70,15 +70,16 @@ Requirements:
     ]
   });
 
-  // Extract the JSON from the response
-  const textContent = response.content.find(b => b.type === 'text');
+  // Extract the JSON from the response — use the last text block since web_search
+  // causes Claude to emit preamble text before the final JSON answer
+  const textBlocks = response.content.filter(b => b.type === 'text');
+  const textContent = textBlocks[textBlocks.length - 1];
   if (!textContent) {
     throw new Error('No text content in Claude response');
   }
 
   let memoJson;
   try {
-    // Extract the JSON object from the response, ignoring any preamble or markdown fences
     const raw = textContent.text;
     const start = raw.indexOf('{');
     const end = raw.lastIndexOf('}');
