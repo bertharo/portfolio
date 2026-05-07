@@ -248,5 +248,51 @@
         "description": "If you use Microsoft 365, schedule 15 minutes to review the new E7 Frontier Suite ($99/user/month) launching May 1. It bundles Copilot, Agent 365 governance, and multi-model orchestration across Claude, GPT, and Microsoft models. Determine if your Entra licensing and agent governance maturity justify migration from E5+Copilot standalone."
       }
     ]
+  },
+  {
+    "id": 6,
+    "date": "2026-05-07",
+    "title": "Anthropic's Revenue Surpasses OpenAI While Enterprise AI Goes Live",
+    "summary": "Anthropic has just eclipsed OpenAI in annual revenue for the first time—hitting $30 billion ARR versus OpenAI's $24 billion—driven by enterprise adoption of AI agents rather than consumer chat products. Simultaneously, a new security crisis emerges: Claude Mythos independently discovered thousands of zero-day vulnerabilities, forcing federal policy shifts around restricted model deployment. The frontier is shifting from capability races to control, distribution, and who decides what gets built.",
+    "trends": [
+      {
+        "headline": "Anthropic becomes largest AI company by revenue",
+        "detail": "Anthropic reached $30 billion annualized recurring revenue, surpassing OpenAI's $24 billion, in just four months. The shift reflects enterprise preference for safety-aligned, agentic workflows over consumer-facing chat—with over 1,000 companies now spending $1M+ annually on Claude."
+      },
+      {
+        "headline": "Claude Mythos found thousands of zero-day vulnerabilities",
+        "detail": "Internal testing of Anthropic's restricted Claude Mythos model revealed it independently identified zero-day flaws across major operating systems that automated security tools had missed for years, including a 27-year-old OpenBSD vulnerability. The discovery triggered federal policy shifts and Project Glasswing, limiting access to 50 organizations."
+      },
+      {
+        "headline": "AI-driven retail traffic surges but quality debate heats up",
+        "detail": "Adobe Digital Insights reported AI traffic to retail sites grew 393% year-over-year in Q1 2026, with 42% higher conversion rates than paid search. Simultaneously, legal sanctions on lawyers using unverified AI citations hit $145,000+ in Q1 alone, signaling a widening gap between AI capability and responsible deployment."
+      },
+      {
+        "headline": "Google launches AI Search Overviews with forum and news sources",
+        "detail": "Today Google updated its AI-powered search to surface richer context, including previews from public discussions, social media, and subscription news alongside search results, addressing reliability concerns about AI-only summaries."
+      },
+      {
+        "headline": "Nvidia invests $3.2B in Corning for optical fiber AI infrastructure",
+        "detail": "Nvidia cemented AI infrastructure dominance by investing heavily in co-packaged optics with Corning, promising to vastly increase data transfer speeds and lower energy demands for AI workloads at scale."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit your AI vendor lock-in risk today",
+        "description": "Anthropic now controls $30B in enterprise revenue and access to restricted models like Mythos. Spend 15 minutes mapping which AI services you depend on, whether alternatives exist, and what switching costs would be. Model diversity isn't optional anymore."
+      },
+      {
+        "label": "Test Claude Opus 4.6 vs GPT-5.4 on your workload",
+        "description": "Benchmark your actual use case against both models using Claude's free tier and OpenAI's API. Claude is dominating enterprise adoption despite OpenAI's higher raw performance; test which actually solves your problem cheaper. Track token costs per task."
+      },
+      {
+        "label": "Validate any AI-generated legal or compliance claims immediately",
+        "description": "Courts imposed $145K+ in sanctions on lawyers for unverified AI citations in Q1. If you're using AI to generate compliance docs, legal briefs, or regulatory claims, manually verify every fact and citation. AI confidence is not accuracy."
+      },
+      {
+        "label": "Review your AI search strategy for 2026",
+        "description": "Google's new search overviews now surface forum discussions and news sources alongside AI summaries. If you're relying on AI search monopoly for traffic, test visibility changes in your analytics. Plan for distribution diversification beyond pure SEO."
+      }
+    ]
   }
 ]
