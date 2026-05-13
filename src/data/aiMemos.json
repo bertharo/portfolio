@@ -544,5 +544,55 @@
         "description": "PMs and teams now juggle 8+ tools for prototyping, research synthesis, and documentation. Spend 20 minutes auditing your current stack (Claude Code, ChatGPT, Perplexity, ChatPRD, Productboard, etc.) and identify 2-3 you can consolidate or replace. Single-tool mastery beats superficial familiarity with many."
       }
     ]
+  },
+  {
+    "id": 12,
+    "date": "2026-05-13",
+    "title": "Claude Mythos Reshapes AI Risk, Google Pursues Space Data Centers",
+    "summary": "Anthropic's Claude Mythos revealed cybersecurity capabilities that triggered federal legislation and changed AI safety protocols overnight. Simultaneously, Google is exploring space-based AI infrastructure with SpaceX, while Chinese labs continue closing the gap with Western frontier models at lower costs. The convergence signals a critical shift: AI safety concerns now drive policy faster than capability announcements.",
+    "trends": [
+      {
+        "headline": "Claude Mythos restricted, reshaping AI safety policy",
+        "detail": "Anthropic's Claude Mythos crossed the ASL-4 safety threshold with autonomous hacking abilities, identifying 27-year-old OpenBSD and 16-year-old FFmpeg vulnerabilities that automated tools missed. The model will not be released publicly or via API, marking the first restricted frontier model and triggering immediate federal legislation on dual-use AI capabilities."
+      },
+      {
+        "headline": "Anthropic ARR surpasses OpenAI for first time",
+        "detail": "Anthropic reached $30 billion annualized recurring revenue in May 2026, exceeding OpenAI's $24 billion. The growth driven by 1,000+ enterprises spending over $1 million annually on Claude for agentic workflows, not consumer chat products. This signals enterprise adoption of AI agents as the primary revenue driver."
+      },
+      {
+        "headline": "Google-SpaceX partnership targets orbital AI infrastructure",
+        "detail": "Google is exploring space-based AI data centers with SpaceX, representing a fundamental shift in compute strategy. This addresses exponential compute needs for frontier models while potentially circumventing terrestrial power constraints and data sovereignty issues."
+      },
+      {
+        "headline": "Chinese labs ship efficient models at fraction of cost",
+        "detail": "DeepSeek V4-Flash released in late April with 284B parameter Mixture-of-Experts activating only 13B per token, achieving frontier-level performance at one-third the cost of Claude Opus 4.7. Four Chinese labs released competitive coding models within 12 days, closing the capability gap while reducing inference expenses dramatically."
+      },
+      {
+        "headline": "AI stock volatility hits Wall Street gains amid sector pullback",
+        "detail": "S&P 500 dipped 0.4% May 12 as technology stocks halted their record run. South Korea's Kospi tumbled 2.3% on fears the government may redistribute AI windfall profits to citizens, signaling emerging policy risks around AI wealth concentration."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit your security posture for AI-exploitable flaws",
+        "description": "Claude Mythos identified vulnerabilities in systems considered security-hardened. Review your infrastructure for zero-day risks now that autonomous hacking capabilities exist. Focus on OS-level patches and dependency audits—the model succeeded where traditional scanners failed for decades."
+      },
+      {
+        "label": "Evaluate multi-model routing to reduce AI spend",
+        "description": "Routing 70% traffic to DeepSeek V4-Flash, 25% to Claude Sonnet, and 5% to Claude Opus achieves frontier performance at 15% of all-frontier cost. Test this split on non-critical workloads within 30 minutes using your existing API infrastructure to validate cost savings."
+      },
+      {
+        "label": "Assess whether agentic workflows unlock revenue",
+        "description": "Anthropic's 3x revenue growth came from enterprises adopting agents, not chat. Identify three manual processes in your company that agents could automate end-to-end. Run a 2-week pilot on the highest-impact workflow to measure time saved and business value."
+      },
+      {
+        "label": "Monitor space-based compute as infrastructure option",
+        "description": "Google-SpaceX partnership signals compute will eventually move off-planet. For teams building inference-heavy products, start tracking orbital data center announcements and pricing models. This may become cheaper than terrestrial alternatives within 18-24 months."
+      },
+      {
+        "label": "Prepare for AI model turnover every 4-6 weeks",
+        "description": "GPT-5.5 shipped six weeks after GPT-5.4. Build model-agnostic architecture now—hardcoded provider dependencies become technical debt overnight. Switch to unified API layers where model changes require parameter updates, not refactoring. This prevents recurring migration projects."
+      }
+    ]
   }
 ]
