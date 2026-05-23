@@ -1040,5 +1040,51 @@
         "description": "Anthropic's cost-per-token dropping from 0.71 to 0.56 in one quarter shows how quickly margins move. If your org has committed GPU capacity or API spend commitments, spend 15 minutes reviewing your contract terms for renewal windows or adjustment clauses. Flag opportunities to shift volume to newer, more efficient models that just hit GA or moved to production pricing."
       }
     ]
+  },
+  {
+    "id": 22,
+    "date": "2026-05-23",
+    "title": "GPT-5.5 Instant Default; Anthropic Nears Profitability",
+    "summary": "OpenAI made GPT-5.5 Instant the ChatGPT default on May 5, delivering fewer hallucinations in high-stakes domains. Anthropic is on track for Q2 profitability with $10.9B projected revenue and $559M operating profit, reshaping investor expectations for frontier AI startups. Meanwhile, GitHub suffered a supply chain attack via poisoned VS Code extensions, highlighting growing security risks in developer ecosystems.",
+    "trends": [
+      {
+        "headline": "GPT-5.5 Instant Becomes ChatGPT Default",
+        "detail": "OpenAI replaced the default model with GPT-5.5 Instant on May 5, emphasizing faster responses and fewer hallucinations in legal, medical, and financial domains. The model scores 81.2 on AIME 2025 math tests and improved on multimodal reasoning benchmarks, marking a shift toward reliability over raw capability."
+      },
+      {
+        "headline": "Anthropic Approaching First Profitable Quarter",
+        "detail": "Anthropic is projected to hit $10.9B Q2 revenue with $559M operating profit, signaling the AI lab business is transitioning from cash-burning research to real commercial operations. For startups, the bar is now distribution, enterprise contracts, and compute discipline."
+      },
+      {
+        "headline": "Meta Restructures 15,000 Employees for AI",
+        "detail": "Meta laid off ~8,000 employees (10% of workforce) and reassigned 7,000 to AI teams while canceling 6,000 open roles, reflecting how AI efficiency gains are driving internal workforce evolution at tech giants."
+      },
+      {
+        "headline": "GitHub Supply Chain Attack Via VS Code",
+        "detail": "Attackers compromised a GitHub employee device through a malicious Nx Console VS Code extension, gaining access to thousands of internal repositories. The incident highlights growing risks to developer tools and open-source ecosystems as primary attack vectors."
+      },
+      {
+        "headline": "Trump Delays AI Executive Order Under Tech Pressure",
+        "detail": "President Trump postponed a planned AI executive order requesting companies voluntarily share advanced models with the government after pressure from tech leaders including Elon Musk and Mark Zuckerberg, showing Silicon Valley's influence over U.S. AI policy debates."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit Hallucination Rates in Your Pipeline",
+        "description": "Test GPT-5.5 Instant against your current default model on high-stakes tasks (legal analysis, medical summaries, financial recommendations). If you're seeing 5%+ hallucination rates in these domains today, migrate testing to the new default and measure the difference. Do this in 15-20 minutes with a controlled sample from your production logs."
+      },
+      {
+        "label": "Evaluate Anthropic As Secondary Provider",
+        "description": "Anthropic's path to profitability signals it's becoming a stable, long-term compute partner, not just a research lab. If you're currently single-provider, request a Slack with an Anthropic account rep to discuss routing 10-15% of non-latency-critical inference through Claude 3.5 Opus for cost comparison. Spend 20 minutes scoping the conversation."
+      },
+      {
+        "label": "Audit Your VS Code Extension Dependencies",
+        "description": "Run `code --list-extensions` in your terminal and check each extension's GitHub/npm update date and maintainer credibility. Flag any with >6 months without updates or suspicious ownership changes. Remove anything unused. This takes 10-15 minutes and directly impacts your supply chain risk profile."
+      },
+      {
+        "label": "Build Model Routing Into Your Stack",
+        "description": "If you're hardcoded to a single model, you're facing migration decisions 3-4 times per quarter. Set aside 30 minutes to sketch a multi-model routing layer using cost and latency heuristics (e.g., GPT-4o-mini for simple tasks, GPT-5.5 Instant for reasoning). Use frameworks like LangChain's routing or build a simple API wrapper that switches models by task type."
+      }
+    ]
   }
 ]
