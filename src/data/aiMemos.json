@@ -1236,5 +1236,55 @@
         "description": "Agentic AI—systems that plan, execute, and recover from failures autonomously—has become the default expectation in 2026. Review your product roadmap to identify which workflows could benefit from agents running continuously in the background. Start with one workflow: define the inputs the agent needs, the decision logic, and user notifications. Prototype it with Gemini 3.5 Flash or Claude Code in under 4 hours."
       }
     ]
+  },
+  {
+    "id": 26,
+    "date": "2026-05-28",
+    "title": "Enterprise AI wars: KPMG, DeployCo, and the $20B shift",
+    "summary": "The structural battle for AI dominance has moved from model releases to enterprise deployment control. KPMG deployed Claude to 276,000 employees while OpenAI's $4B DeployCo subsidiary fights to reclaim market share from Anthropic, signaling that AI's most important layer is now how enterprises adopt it, not what the models can do.",
+    "trends": [
+      {
+        "headline": "Big Four firms standardize on Claude",
+        "detail": "KPMG, PwC, Deloitte, and BlackRock are consolidating on Anthropic's Claude, representing 1.1 million professionals globally by September 2026. This implicit endorsement to their Fortune 500 clients creates unmatched enterprise distribution leverage for Anthropic at a scale traditional sales could never achieve."
+      },
+      {
+        "headline": "OpenAI launches $4B deployment company",
+        "detail": "OpenAI's DeployCo subsidiary is a direct response to losing enterprise market share from 50% (2023) to 25% (mid-2025). The majority-owned consulting subsidiary with $4B backing signals OpenAI is betting the enterprise deployment layer, not frontier models, will determine 2026 market winners."
+      },
+      {
+        "headline": "Deployable AI data centers hit production",
+        "detail": "Armada raised $230M at $2B valuation on May 19 with BlackRock as new investor; Johnson Controls will manufacture modular compute units in Arizona. Edge AI is shifting from pilot budgets to 2027 procurement decisions as on-site inference becomes financially viable versus cloud markup."
+      },
+      {
+        "headline": "GPT-5.5 Instant replaces default model",
+        "detail": "OpenAI moved GPT-5.5 Instant to ChatGPT default on May 5, claiming 52.5% fewer hallucinations on high-stakes prompts in medicine, law, and finance. The shift is to execution quality and domain safety over benchmark scores—a signal that reliability now beats raw capability."
+      },
+      {
+        "headline": "Cohere acquires Aleph Alpha for $20B",
+        "detail": "Cohere and Aleph Alpha announced a merger creating a transatlantic AI competitor valued at $20 billion, positioning Canada and Germany as sovereign AI alternatives to US-dominated consolidation. The deal consolidates capital and engineering around European model sovereignty."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit your enterprise AI stack",
+        "description": "Map which models your organization uses and which deployment layers (cloud, on-prem, consultant-managed) run them. If you are deployed on OpenAI alone, DeployCo's existence signals competitive pressure that will reshape pricing and support in the next 12 months. Document your switching costs."
+      },
+      {
+        "label": "Test Claude on production workflows",
+        "description": "With KPMG, PwC, and Deloitte all committed to Claude by September, the Big Four endorsement carries weight for enterprise risk assessment. Run a 30-day pilot on your highest-governance workflow (legal review, financial analysis, healthcare compliance) to establish baseline quality versus your current model. Budget 2 hours for baseline setup."
+      },
+      {
+        "label": "Evaluate edge compute for 2027 budgets",
+        "description": "If your CIO is locking 2027 IT budgets this week, on-premises inference is now a real line item with Armada's $2B validation and Johnson Controls manufacturing. Request compute cost comparisons between cloud and edge options for your inference volume. This changes the ROI on real-time or sensitive workloads."
+      },
+      {
+        "label": "Track hallucination rates on sensitive tasks",
+        "description": "GPT-5.5 Instant's 52.5% hallucination reduction matters most in law, medicine, and finance. Run your own silent evaluation on 50 high-stakes prompts (contract interpretation, diagnosis support, financial forecasting) to measure real improvement over your current default. Document failure modes to inform January model reviews."
+      },
+      {
+        "label": "Follow Big Four AI deployment patterns",
+        "description": "Join KPMG's webinar or review their case study on deploying Claude to 276,000 employees across 138 countries. The governance, onboarding, and safety layers they built will become industry templates. Document their approach for your own rollout playbook by June 30."
+      }
+    ]
   }
 ]
