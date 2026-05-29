@@ -1286,5 +1286,55 @@
         "description": "Join KPMG's webinar or review their case study on deploying Claude to 276,000 employees across 138 countries. The governance, onboarding, and safety layers they built will become industry templates. Document their approach for your own rollout playbook by June 30."
       }
     ]
+  },
+  {
+    "id": 27,
+    "date": "2026-05-29",
+    "title": "Enterprise AI Deployment Now Outpaces Model Innovation",
+    "summary": "The week's biggest story isn't a new frontier model—it's the consolidation of AI across the global enterprise. KPMG deployed Claude to 276,000 employees, Anthropic hit $900B+ valuation overtaking OpenAI, and all Big Four firms now run production AI at scale. The structural shift from R&D to deployment means professionals must focus on integration architecture, not benchmark chasing.",
+    "trends": [
+      {
+        "headline": "Big Four unified on Claude at scale",
+        "detail": "KPMG deployed Claude to 276,000 employees across 138 countries on May 19. PwC (276,000), Deloitte (470,000), and now KPMG are all in production—not pilot—with Anthropic's Claude. This is the enterprise deployment matrix completing, signaling that capability differentiation has matured enough for lock-in at organizational scale."
+      },
+      {
+        "headline": "Anthropic's $900B+ valuation tops OpenAI",
+        "detail": "Anthropic closed a $30B+ funding round this week at pre-money valuation above $900 billion, led by Sequoia, Dragoneer, Altimeter, and Greenoaks. The round positions Anthropic above OpenAI's March 2026 valuation of $852 billion, making Claude's maker the world's most valuable private AI startup for the first time."
+      },
+      {
+        "headline": "Gemini 3.5 Flash GA live today",
+        "detail": "Google shipped Gemini 3.5 Flash to general availability on May 19 at $1.50/$9 per 1M tokens with 1M context. It delivers frontier-level intelligence at 4x speed of comparable models and beats Gemini 3.1 Pro on coding and agents—shifting the default tier competition, not just the frontier."
+      },
+      {
+        "headline": "Canada rules OpenAI violated privacy law",
+        "detail": "Canada's Office of the Privacy Commissioner concluded on May 6 that OpenAI's ChatGPT training methods violated Canadian privacy statutes. This marks the first G7 jurisdiction formal finding against a US-based AI lab, setting precedent for data sovereignty enforcement across North America."
+      },
+      {
+        "headline": "Generative AI beats average human on creativity",
+        "detail": "A study of 100,000 people found that generative AI now outperforms the average human on standard creativity tests. The research signals that capability benchmarks have crossed into skill domains previously assumed to be human-exclusive, reshaping hiring expectations for creative roles."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit your vendor lock-in risk",
+        "description": "The enterprise deployment wave means model switching costs are rising. Spend 20 minutes documenting which AI services your team and org depend on, then assess whether single-vendor dependencies create acceptable lock-in. If 70%+ of workloads run on one provider, design a parallel evaluation path for Q3."
+      },
+      {
+        "label": "Test Gemini 3.5 Flash on your workload",
+        "description": "Gemini 3.5 Flash is now GA and positioned to reshape default-tier pricing. Run your current Claude or GPT use case through the Gemini API, time the response, and cost it. You likely have 15-20% cost savings on latency-sensitive work available immediately. Set a 30-minute time budget."
+      },
+      {
+        "label": "Map privacy compliance for your AI systems",
+        "description": "Canada's enforcement action signals enforcement momentum in G7 jurisdictions. Document which AI systems in your product or operations process Canadian user data, then cross-check vendor privacy claims against the standard that just blocked OpenAI. File a brief gap summary with your legal or compliance lead."
+      },
+      {
+        "label": "Evaluate agentic AI routing architecture",
+        "description": "With 255+ models in the market and quality spikes happening 3-4x per quarter, hardcoding a single model creates recurring migration debt. Spend 25 minutes researching multi-model routing patterns and task-specific model selection. This becomes your Q3 architecture debt if not addressed now."
+      },
+      {
+        "label": "Check your creativity benchmark strategy",
+        "description": "If hiring or evaluating roles in design, copywriting, or strategy, the human-AI creativity parity finding changes what credentials and portfolios signal. Review one current job spec or hiring rubric for whether it still values human creativity as a differentiator. Update if needed."
+      }
+    ]
   }
 ]
