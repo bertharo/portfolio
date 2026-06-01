@@ -1432,5 +1432,55 @@
         "description": "Download OpenAI's Frontier Governance Framework and share with your legal/compliance team. If you're building in regulated sectors (healthcare, finance, government), review how their TFAIA and EU AI Act mappings compare to your own compliance obligations. Takes 15 minutes to identify gaps you need to close independently."
       }
     ]
+  },
+  {
+    "id": 30,
+    "date": "2026-06-01",
+    "title": "Google Ships Agent Era with Gemini 3.5 Flash Default",
+    "summary": "Google rolled out Gemini 3.5 Flash as the default model in AI Mode Search globally—marking the shift from chatbot-first to agent-first thinking. The larger story is architectural: May saw reasoning models, efficiency gains (ZAYA1-8B at 760M active params), and subquadratic LLMs (SubQ) edge out pure capability races. For developers and product teams, this means faster shipping cycles, lower inference costs, and new pressure to think about agent integration patterns.",
+    "trends": [
+      {
+        "headline": "Agent-first search with persistent background monitoring",
+        "detail": "Google's information agents now run 24/7 to scan for changes matching user requirements—apartment hunting, price drops, event updates. The semantic shift from 'query and get answer' to 'continuous task execution' reframes what search can do. Personal Intelligence expansion (98 languages, nearly 200 countries) with Gmail/Google Photos integration follows."
+      },
+      {
+        "headline": "Efficiency wins over frontier scaling in May",
+        "detail": "GPT-5.5 Instant and Gemini 3.1 Flash Lite became defaults, not frontiers. Zyphra's ZAYA1-8B (8B params, 760M active via MoE) delivered reasoning parity to 40B+ models on AMD hardware. SubQ shipped the first commercial subquadratic LLM at 1/5th the cost of GPT-5.5 on 12M-token contexts. Architecture now beats raw scale."
+      },
+      {
+        "headline": "LG eyeing physical AI partnerships; industrial AI pivoting",
+        "detail": "LG's stock surged 30% two days running on news of June 5 meeting with Nvidia's Jensen Huang—signaling hardware-software convergence in physical robotics and manufacturing. The Blackstone-Google $5B TPU JV (announced May 18) underscores infrastructure play shifting to on-device and edge reasoning."
+      },
+      {
+        "headline": "MCP becoming the connective standard for agentic workflows",
+        "detail": "Anthropic's Model Context Protocol (dubbed 'USB-C for AI') now adopted by OpenAI, Microsoft, Google, and the Linux Foundation's new Agentic AI Foundation. MCP reduces friction between agents and real systems—databases, APIs, search. 2026 is the year agentic workflows move from demos into production."
+      },
+      {
+        "headline": "OpenAI ships Rosalind biodefense and retires older models",
+        "detail": "GPT-4.5 sunsets June 27; GPT-o3 sunsets August 26 following 30-90 day deprecation windows. OpenAI expanded trusted access to GPT-Rosalind for vetted government partners in biodefense and pandemic preparedness—frontier capability gating by use case, not just tier."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit your LLM stack against new defaults",
+        "description": "If you ship with GPT-4o, Gemini 1.5, or Claude 3.5: check whether the new default tiers (GPT-5.5 Instant, Gemini 3.5 Flash, Claude Opus 4.8) improve your latency or cost without code changes. Most API clients auto-upgrade on 'latest' aliases. Run a 30-minute benchmark on your top 5 queries using both old and new defaults; measure p50 latency and cost-per-token."
+      },
+      {
+        "label": "Evaluate MCP for your agent stack",
+        "description": "If you're wiring agents to external data or APIs today, you're probably hand-coding connectors. Google, Anthropic, and OpenAI now publish MCP servers for their own products. Download the MCP spec and audit your current integrations: could three of them become one MCP tunnel? Reduces maintenance debt and future-proofs for new agents."
+      },
+      {
+        "label": "Test reasoning-first vs speed-first for your use case",
+        "description": "DeepSeek V4 at $0.435/1M input tokens and ZAYA1-8B's open-source efficiency make reasoning accessible to cost-sensitive teams. Compare o1/DeepSeek-R1 (slow, accurate, $expensive) versus GPT-5.5 Instant (fast, good enough, $cheap) on your actual task in 20 minutes using their playgrounds. Plot results as latency vs accuracy; pick the pareto winner for your SLA."
+      },
+      {
+        "label": "Map your product to the agent-first Search pattern",
+        "description": "Google's information agents show the new UX: users declare intent once, the system acts repeatedly in background. Ask: could your core workflow compress into standing instructions + continuous execution? Grab the I/O 2026 demo, mock your feature in Claude Cowork or Cursor Composer, and show stakeholders a 10-minute walkthrough. Agents shift from nice-to-have to table-stakes."
+      },
+      {
+        "label": "Pin your ChatGPT/API models before June 27 sunset",
+        "description": "GPT-4.5 is deprecated June 27 with 30 days notice. If you hardcoded 'gpt-4.5-turbo' anywhere (not using 'latest' alias), your code breaks in a month. Audit dependencies and pin to a versioned model that won't change: gpt-4-turbo-2024-04-09 or move to gpt-5.5-instant. Do this in 15 minutes now; avoid a production incident on June 27."
+      }
+    ]
   }
 ]
