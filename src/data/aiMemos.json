@@ -1482,5 +1482,55 @@
         "description": "GPT-4.5 is deprecated June 27 with 30 days notice. If you hardcoded 'gpt-4.5-turbo' anywhere (not using 'latest' alias), your code breaks in a month. Audit dependencies and pin to a versioned model that won't change: gpt-4-turbo-2024-04-09 or move to gpt-5.5-instant. Do this in 15 minutes now; avoid a production incident on June 27."
       }
     ]
+  },
+  {
+    "id": 31,
+    "date": "2026-06-02",
+    "title": "Anthropic Files for IPO as Gemini Flash GA, Microsoft Build Opens",
+    "summary": "Anthropic confidentially filed an S-1 for a public offering today, signaling major consolidation in frontier AI labs. Simultaneously, Google released Gemini 3.5 Flash (now default across products, outperforming Gemini 3.1 on coding), Microsoft Build 2026 opens with homegrown AI models and Windows Agent Framework, and developers are shifting from model selection to workflow-specific orchestration. This matters because IPO activity, new frontier models, and agentic capabilities are reshaping both AI infrastructure costs and engineering workflows.",
+    "trends": [
+      {
+        "headline": "Anthropic Files for IPO, Reshaping AI Funding",
+        "detail": "Anthropic confidentially filed draft S-1 with SEC today for proposed public offering, becoming the latest major AI lab pursuing public markets alongside OpenAI and SpaceX compute ambitions. The move signals market maturation and capital acceleration at unprecedented scale."
+      },
+      {
+        "headline": "Gemini 3.5 Flash Goes GA with Frontier Speed",
+        "detail": "Google released Gemini 3.5 Flash as generally available today, priced at $1.50/$9 per million tokens with 1M context. It achieves 76.2% on Terminal-Bench 2.1 and outperforms Gemini 3.1 Pro on coding and agentic tasks, now default across Gemini app and AI Search globally."
+      },
+      {
+        "headline": "Microsoft Build Unveils Windows AI, MAI Models",
+        "detail": "Microsoft Build 2026 opens June 2-3 in San Francisco with confirmed announcements: homegrown MAI coding models to strengthen GitHub Copilot, Windows Agent Framework APIs for OS-native autonomous agents, and Azure AI Foundry formally supporting Anthropic Claude with enterprise SLAs."
+      },
+      {
+        "headline": "Claude Code Dominates Developer Tool Rankings",
+        "detail": "Claude Code (Anthropic) has risen to #1 AI coding tool in just eight months since launch, overtaking GitHub Copilot and Cursor. Recent survey of engineers shows Opus 4.8 and Sonnet models dominate coding tasks more than all other models combined."
+      },
+      {
+        "headline": "GitHub Copilot Shifts to Token-Based Billing",
+        "detail": "GitHub Copilot switched from flat subscription to token-based billing across all plans on June 1, 2026, directly addressing backlash. Microsoft is countering with dedicated coding models and Agent Mode for multi-step workflows announced at Build."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Test Gemini 3.5 Flash pricing against Claude Opus 4.8",
+        "description": "Run evaluation set on both Gemini 3.5 Flash ($1.50 per 1M input tokens) and Claude Opus 4.8 for your specific coding/reasoning tasks. At frontier performance with 4x speed advantage, Flash may reduce inference costs by 60%+ for latency-tolerant workflows. Complete in 15 minutes using AI Studio and Claude API."
+      },
+      {
+        "label": "Audit GitHub Copilot token usage before billing cutoff",
+        "description": "Log into GitHub settings and review seat allocation vs. actual monthly token consumption for your team. Token-based billing means cost tracking is now granular; misaligned pricing could spike 40-80% if usage patterns change. Export reports from GitHub Enterprise dashboard."
+      },
+      {
+        "label": "Register for Microsoft Build keynote and agent sessions",
+        "description": "Attend live or watch livestream at build.microsoft.com (free) June 2-3. Windows Agent Framework APIs and GitHub Copilot Agent Mode announcements will define enterprise orchestration standards for Q3. Keynote reveals MAI coding model competitive positioning."
+      },
+      {
+        "label": "Benchmark Claude Code Agent SDK against legacy approaches",
+        "description": "Set up Claude Code with Agent SDK and extended thinking on 3-5 representative multi-step tasks (debugging, refactoring, architecture decisions). Compare completion time and quality vs. manual prompting. Document workflow fit for team capability mapping in next planning cycle."
+      },
+      {
+        "label": "Map model costs to your LLM stack by use case",
+        "description": "Create three buckets: high-speed tasks (Gemini Flash or GPT-5.5 mini), general reasoning (Claude Opus 4.8 or GPT-5.5), and cost-sensitive batch work (Qwen 3.7 or open Gemma 4). Use LLM Stats pricing tool to model June spend at current usage. Finish in 20 minutes to unblock budget allocation."
+      }
+    ]
   }
 ]
