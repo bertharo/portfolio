@@ -1582,5 +1582,55 @@
         "description": "Calculate true cost across your current model stack by use case: coding, summarization, search, reasoning. Measure in dollars per task, not per token. Use Perplexity, Claude Code, or Gemini to audit your spend. This 20-minute exercise reveals which model swaps would actually save money versus just sounding cheaper."
       }
     ]
+  },
+  {
+    "id": 33,
+    "date": "2026-06-04",
+    "title": "Copilot Pricing Backlash, Microsoft Agents, Anthropic IPO Filed",
+    "summary": "GitHub Copilot's shift to token-based billing sparked massive developer backlash with costs rising 25x, while Microsoft announced its own homegrown MAI coding models and Azure Agent Mesh for enterprise. Anthropic filed for IPO on June 2 at $965B valuation, surpassing OpenAI as the most valuable private AI company, with expected October listing.",
+    "trends": [
+      {
+        "headline": "GitHub Copilot token billing enrages developer community",
+        "detail": "GitHub Copilot switched from flat $29/month pricing to token-based billing, with developers reporting monthly costs jumping to ~$750/month. Backlash is widespread on Reddit, Hacker News, and X with developers calling it a cash grab."
+      },
+      {
+        "headline": "Microsoft ships MAI models to reduce OpenAI dependency",
+        "detail": "Microsoft Build 2026 launched MAI-Code-1-Flash coding model and MAI-Thinking-1 reasoning model, with claims of outperforming OpenAI's GPT-5.5 at 10x better cost efficiency. Models available via GitHub Copilot, Visual Studio Code, and Microsoft Foundry."
+      },
+      {
+        "headline": "Anthropic IPO filing signals shift from PBC governance",
+        "detail": "Anthropic filed confidential S-1 on June 2 following $65B Series H at $965B post-money valuation. IPO expected October 2026, setting precedent for how public benefit corporation status interacts with shareholder rights in AI governance."
+      },
+      {
+        "headline": "Azure Agent Mesh orchestrates multi-cloud AI agent workflows",
+        "detail": "Microsoft announced Agent Mesh to manage AI agents across Azure, AWS Bedrock, Google Cloud, on-premise systems, and Windows 365 with unified governance from Entra ID and Purview. Directly addresses enterprise compliance barriers to agent adoption."
+      },
+      {
+        "headline": "Gemini 3.5 Flash launches at 4x speed with $1.50 input pricing",
+        "detail": "Google released Gemini 3.5 Flash as generally available with frontier-level intelligence at 4x speed of comparable models. Priced at $1.50/$9 per 1M tokens with 1M context window, beats Gemini 3.1 Pro on coding and agents."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit Copilot usage before token billing hits",
+        "description": "Export your GitHub Copilot activity logs and check actual token consumption patterns across your team. Calculate projected June costs under token-based billing now. If overages are significant, evaluate switching to Claude Code, Cursor, or VS Code Copilot alternatives before month-end budgets lock in."
+      },
+      {
+        "label": "Test Microsoft MAI models for cost arbitrage",
+        "description": "Create small pilot in Microsoft Foundry with MAI-Code-1-Flash on a 1-2 feature branch or script generation task. Compare output quality and per-request cost against your current OpenAI/Anthropic setup. If performance holds at 10x cost reduction, plan broader migration for Q3."
+      },
+      {
+        "label": "Review enterprise agent architecture against Azure Agent Mesh",
+        "description": "Inventory your current AI agent deployments across cloud providers and on-premise systems. Map governance and compliance requirements (audit trails, identity, data classification). Evaluate Azure Agent Mesh as centralized orchestration layer to reduce fragmentation and compliance overhead."
+      },
+      {
+        "label": "Benchmark Gemini 3.5 Flash for latency-sensitive tasks",
+        "description": "Run your realtime or interactive AI workloads (chat, customer support agents, low-latency inference) against Gemini 3.5 Flash in Google Cloud. Time first-token latency and throughput. If speed gains outpace cost tradeoffs, backtest cost per request vs Claude Opus 4.8 or GPT-5.5."
+      },
+      {
+        "label": "Monitor Anthropic IPO filing for safety governance disclosure",
+        "description": "Read the S-1 when SEC review begins (likely July-August). Pay special attention to the public benefit corporation governance section and how Long-Term Benefit Trust interacts with shareholder rights. This becomes the template for how other AI labs go public."
+      }
+    ]
   }
 ]
