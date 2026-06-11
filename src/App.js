@@ -12,7 +12,7 @@ function App() {
       <header className={styles.header}>
         <div className={styles.headerInner}>
           <h1 className={styles.mainTitle}>Bert Haro</h1>
-          <p className={styles.heroSubtitle}>AI Product Manager · Boston Marathoner · Podcast Host</p>
+          <p className={styles.heroSubtitle}>Product Leader · Boston Marathoner · Podcast Host</p>
           <div className={styles.heroLinks}>
             <a href="https://www.linkedin.com/in/bert-h-15181116/" target="_blank" rel="noopener noreferrer" className={styles.heroLink}>LinkedIn</a>
             <a href="https://www.strava.com/athletes/21540517" target="_blank" rel="noopener noreferrer" className={styles.heroLink}>Strava</a>
@@ -32,7 +32,7 @@ function App() {
               I build AI-powered products. Most of that work is deciding how a system should behave — what it should say, what it should refuse to do, and how you'd know when it's wrong — then building the feedback loops to keep it honest in production.
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
-              Over 10 years I've shipped products at Workday, Roofstock, and Human Interest — scaling to $150MM ARR and leading cross-functional teams across enterprise SaaS and fintech.
+              Over 10 years I've shipped products at Workday, Roofstock, and Human Interest — scaling to $150MM+ ARR and leading cross-functional teams across enterprise SaaS and fintech.
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
               I hold an MBA from UC Berkeley's Haas School of Business. I think in systems, work across disciplines, and move fast without losing precision.
