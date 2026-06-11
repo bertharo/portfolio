@@ -1,10 +1,17 @@
 import React from 'react';
-import styles from './Footer.module.css';
 
 const Footer = () => (
-  <footer className={styles.footer}>
-    <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+  <footer style={{
+    borderTop: '1px solid #e5e5e5',
+    padding: '2rem',
+    textAlign: 'center',
+    fontSize: '0.8rem',
+    color: '#bbb',
+    background: '#fafafa',
+    letterSpacing: '0.04em',
+  }}>
+    © {new Date().getFullYear()} Bert Haro
   </footer>
 );
 
-export default Footer; 
+export default Footer;

@@ -8,84 +8,27 @@ function App() {
   return (
     <div className={styles.app}>
       <Navbar />
-      
-      {/* Minimalistic Hero Section */}
+
       <header className={styles.header}>
-        <div style={{ 
-          maxWidth: '800px', 
-          margin: '0 auto', 
-          padding: '4rem 2rem 2rem 2rem',
-          textAlign: 'left'
-        }}>
-          <h1 className={styles.mainTitle} style={{ 
-            fontSize: '2.5rem', 
-            fontWeight: '300', 
-            marginBottom: '1rem',
-            color: '#fff'
-          }}>
-            Bert Haro
-          </h1>
-          <p style={{
-            fontSize: '1.2rem',
-            color: '#fff',
-            opacity: 0.9,
-            marginBottom: '2rem',
-            fontWeight: '300'
-          }}>
-            AI Product Manager · Boston Marathoner · Podcast Host
-          </p>
-          <div style={{ 
-            display: 'flex', 
-            gap: '1rem',
-            marginBottom: '2rem'
-          }}>
-            <a href="https://www.linkedin.com/in/bert-h-15181116/" target="_blank" rel="noopener noreferrer" style={{ 
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.9rem',
-              opacity: 0.8,
-              transition: 'opacity 0.2s'
-            }} aria-label="LinkedIn">
-              LinkedIn
-            </a>
-            <span style={{ color: '#fff', opacity: 0.5 }}>•</span>
-            <a href="https://www.strava.com/athletes/21540517" target="_blank" rel="noopener noreferrer" style={{ 
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.9rem',
-              opacity: 0.8,
-              transition: 'opacity 0.2s'
-            }} aria-label="Strava">
-              Strava
-            </a>
-            <span style={{ color: '#fff', opacity: 0.5 }}>•</span>
-            <a href="https://github.com/bertharo" target="_blank" rel="noopener noreferrer" style={{ 
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.9rem',
-              opacity: 0.8,
-              transition: 'opacity 0.2s'
-            }} aria-label="GitHub">
-              GitHub
-            </a>
+        <div className={styles.headerInner}>
+          <h1 className={styles.mainTitle}>Bert Haro</h1>
+          <p className={styles.heroSubtitle}>AI Product Manager · Boston Marathoner · Podcast Host</p>
+          <div className={styles.heroLinks}>
+            <a href="https://www.linkedin.com/in/bert-h-15181116/" target="_blank" rel="noopener noreferrer" className={styles.heroLink}>LinkedIn</a>
+            <a href="https://www.strava.com/athletes/21540517" target="_blank" rel="noopener noreferrer" className={styles.heroLink}>Strava</a>
+            <a href="https://github.com/bertharo" target="_blank" rel="noopener noreferrer" className={styles.heroLink}>GitHub</a>
           </div>
         </div>
       </header>
 
-      <main className={styles.main} style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem' }}>
-        
-        {/* About Section - Minimalistic */}
-        <section id="about" className={styles.section} style={{ marginBottom: '3rem' }}>
-          <h2 className={styles.sectionTitle} style={{ 
-            fontSize: '1.5rem', 
-            fontWeight: '400', 
-            marginBottom: '1.5rem',
-            color: '#111'
-          }}>
-            About
-          </h2>
-          <div style={{ lineHeight: '1.7', color: '#333' }}>
-            <p style={{ marginBottom: '1.5rem' }}>
+      <hr className={styles.heroDivider} />
+
+      <main className={styles.main}>
+
+        <section id="about" className={styles.section}>
+          <h2 className={styles.sectionTitle}>About</h2>
+          <div style={{ lineHeight: '1.8', color: '#333', maxWidth: '680px' }}>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
               I build AI-powered products — defining how systems should behave, how to know when they're failing, and how to iterate toward the right outputs. My work sits at the intersection of product strategy and AI system design: writing behavior specs, designing evaluation frameworks, and owning the full pipeline from prompt architecture to production monitoring.
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
@@ -100,105 +43,59 @@ function App() {
           </div>
         </section>
 
-        {/* Experience Section - Clean list */}
-        <section className={styles.section} style={{ marginBottom: '3rem' }}>
-          <h2 className={styles.sectionTitle} style={{ 
-            fontSize: '1.5rem', 
-            fontWeight: '400', 
-            marginBottom: '1.5rem',
-            color: '#111'
-          }}>
-            Experience
-          </h2>
-          <div style={{ display: 'grid', gap: '1.5rem' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <img src={process.env.PUBLIC_URL + '/workday-logo.png'} alt="Workday" style={{ width: '40px', height: 'auto' }} />
-              <div>
-                <div style={{ fontWeight: '500', color: '#111' }}>Workday</div>
-                <div style={{ fontSize: '0.9rem', color: '#666' }}>Enterprise SaaS</div>
+        <hr className={styles.sectionDivider} />
+
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Experience</h2>
+          <div style={{ display: 'grid', gap: '1.25rem' }}>
+            {[
+              { logo: '/workday-logo.png', name: 'Workday', tag: 'Enterprise SaaS' },
+              { logo: '/roofstock-logo.png', name: 'Roofstock', tag: 'Fintech' },
+              { logo: '/human-interest-logo.png', name: 'Human Interest', tag: 'Fintech' },
+            ].map(({ logo, name, tag }) => (
+              <div key={name} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <img src={process.env.PUBLIC_URL + logo} alt={name} style={{ width: '36px', height: 'auto', opacity: 0.85 }} />
+                <div>
+                  <div style={{ fontWeight: '500', color: '#111', fontSize: '0.97rem' }}>{name}</div>
+                  <div style={{ fontSize: '0.82rem', color: '#999', marginTop: '1px' }}>{tag}</div>
+                </div>
               </div>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <img src={process.env.PUBLIC_URL + '/roofstock-logo.png'} alt="Roofstock" style={{ width: '40px', height: 'auto' }} />
-              <div>
-                <div style={{ fontWeight: '500', color: '#111' }}>Roofstock</div>
-                <div style={{ fontSize: '0.9rem', color: '#666' }}>Fintech</div>
-              </div>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <img src={process.env.PUBLIC_URL + '/human-interest-logo.png'} alt="Human Interest" style={{ width: '40px', height: 'auto' }} />
-              <div>
-                <div style={{ fontWeight: '500', color: '#111' }}>Human Interest</div>
-                <div style={{ fontSize: '0.9rem', color: '#666' }}>Fintech</div>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
 
-        {/* Podcast Section */}
-        <section id="podcast" className={styles.section} style={{ marginBottom: '3rem' }}>
-          <h2 className={styles.sectionTitle} style={{ 
-            fontSize: '1.5rem', 
-            fontWeight: '400', 
-            marginBottom: '1.5rem',
-            color: '#111'
-          }}>
-            Podcast
-          </h2>
-          <div style={{ marginBottom: '1.5rem' }}>
-            <p style={{ marginBottom: '1rem', color: '#333', lineHeight: '1.7' }}>
-              I host a podcast focused on startups, featuring conversations with founders and entrepreneurs about building companies, product development, and the journey of bringing ideas to life.
-            </p>
-            <a href="https://open.spotify.com/episode/4IPwB35TmY5Ifeay0CNmOa?si=difNGTeBRz2VOv49ICEu-g&nd=1&dlsi=2b7a9b8d228e4d52" target="_blank" rel="noopener noreferrer" style={{ 
-              color: '#111',
-              textDecoration: 'none',
-              fontSize: '1rem',
-              fontWeight: '400',
-              transition: 'opacity 0.2s'
-            }}>
-              Latest Episode: Built AI-First: ololand.ai →
-            </a>
-          </div>
+        <hr className={styles.sectionDivider} />
+
+        <section id="podcast" className={styles.section}>
+          <h2 className={styles.sectionTitle}>Podcast</h2>
+          <p style={{ marginBottom: '1rem', color: '#444', lineHeight: '1.7', maxWidth: '580px' }}>
+            I host a podcast on startups — conversations with founders about building companies, product decisions, and the journey from idea to scale.
+          </p>
+          <a href="https://open.spotify.com/episode/4IPwB35TmY5Ifeay0CNmOa?si=difNGTeBRz2VOv49ICEu-g&nd=1&dlsi=2b7a9b8d228e4d52" target="_blank" rel="noopener noreferrer" style={{ color: '#111', textDecoration: 'none', fontSize: '0.95rem' }}>
+            Latest Episode: Built AI-First: ololand.ai →
+          </a>
         </section>
 
-        {/* Featured Section - Simple link */}
-        <section id="featured" className={styles.section} style={{ marginBottom: '3rem' }}>
-          <h2 className={styles.sectionTitle} style={{ 
-            fontSize: '1.5rem', 
-            fontWeight: '400', 
-            marginBottom: '1.5rem',
-            color: '#111'
-          }}>
-            Featured
-          </h2>
-          <div>
-            <a href="https://creators.spotify.com/pod/profile/lee-greathouse/episodes/Episode-1-Bert-Haro-e322smi" target="_blank" rel="noopener noreferrer" style={{ 
-              color: '#111',
-              textDecoration: 'none',
-              fontSize: '1rem',
-              fontWeight: '400',
-              transition: 'opacity 0.2s'
-            }}>
-              Qualified Podcast: Episode 1 Bert Haro
-            </a>
-          </div>
+        <hr className={styles.sectionDivider} />
+
+        <section id="featured" className={styles.section}>
+          <h2 className={styles.sectionTitle}>Featured</h2>
+          <a href="https://creators.spotify.com/pod/profile/lee-greathouse/episodes/Episode-1-Bert-Haro-e322smi" target="_blank" rel="noopener noreferrer" style={{ color: '#111', textDecoration: 'none', fontSize: '0.95rem' }}>
+            Qualified Podcast: Episode 1 — Bert Haro →
+          </a>
         </section>
 
-        {/* Projects Section - Card-based layout */}
-        <section id="projects" className={styles.section} style={{ marginBottom: '3rem' }}>
-          <h2 className={styles.sectionTitle} style={{
-            fontSize: '1.5rem',
-            fontWeight: '400',
-            marginBottom: '1.5rem',
-            color: '#111'
-          }}>
-            Projects
-          </h2>
+        <hr className={styles.sectionDivider} />
+
+        <section id="projects" className={styles.section}>
+          <h2 className={styles.sectionTitle}>Projects</h2>
           <Projects />
         </section>
 
-        {/* AI Daily Memo */}
+        <hr className={styles.sectionDivider} />
+
         <Blog />
+
       </main>
       <Footer />
     </div>
