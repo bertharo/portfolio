@@ -217,6 +217,40 @@ const Blog = () => {
         </div>
       </div>
 
+      {/* How I built it */}
+      <div style={{
+        border: '1px solid #e5e5e5',
+        borderRadius: '2px',
+        padding: '1.25rem 1.75rem',
+        background: '#fafafa',
+        marginBottom: '2rem'
+      }}>
+        <h4 style={{
+          fontSize: '0.75rem',
+          fontWeight: '600',
+          letterSpacing: '0.1em',
+          textTransform: 'uppercase',
+          color: '#999',
+          marginBottom: '0.85rem'
+        }}>
+          How This Works
+        </h4>
+        <div style={{ fontSize: '0.92rem', color: '#444', lineHeight: '1.7', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+          <p style={{ margin: 0 }}>
+            <strong style={{ color: '#111' }}>Behavior definition.</strong> Each memo is scoped to signal over noise: 4–5 named trends with evidence, and 4–5 action items with a concrete time estimate. The system prompt constrains the model to cite real companies and reject vague "AI is changing everything" framing.
+          </p>
+          <p style={{ margin: 0 }}>
+            <strong style={{ color: '#111' }}>Prompt architecture.</strong> A structured system prompt defines the output schema (JSON with title, summary, trends[], actionItems[]), tone (concise, practitioner-focused), and failure modes to avoid (hype language, duplicate trends, generic advice).
+          </p>
+          <p style={{ margin: 0 }}>
+            <strong style={{ color: '#111' }}>Evaluation & iteration.</strong> Early versions over-indexed on funding news and missed operational AI stories. Adjusted the prompt weighting to balance announcements with "what PMs and engineers should actually do today." Output quality is checked daily by reading the memo as a practitioner, not an editor.
+          </p>
+          <p style={{ margin: 0 }}>
+            <strong style={{ color: '#111' }}>Pipeline.</strong> GitHub Actions runs <code style={{ background: '#eee', padding: '0.1rem 0.3rem', borderRadius: '2px' }}>scripts/generate-ai-memo.js</code> at 7:05 AM UTC, commits the updated JSON, and triggers a Vercel redeploy — zero manual steps.
+          </p>
+        </div>
+      </div>
+
       {/* Live AI News Feed */}
       <div>
         <h4 style={{

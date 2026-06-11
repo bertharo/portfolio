@@ -4,46 +4,31 @@ import styles from './Projects.module.css';
 const Projects = () => {
   const projects = [
     {
-      title: "Hux: Social Media Without Ads",
-      description: "A modern social media platform reimagined without advertisements. Built with a focus on authentic connections and user experience, providing a clean and distraction-free environment for meaningful interactions.",
-      url: "https://myhux.com/",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop"
-    },
-    {
-      title: "State Analysis Dashboard",
-      description: "An interactive data visualization tool comparing key metrics and statistics across different U.S. states. Explore demographic, economic, and social indicators to understand regional differences and trends.",
-      url: "https://musical-dieffenbachia-e5cb4a.netlify.app/",
-      image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop"
-    },
-    {
-      title: "Workforce Job Trends",
-      description: "A comprehensive analytics platform featuring real-time data visualization and insights. Designed to help teams make data-driven decisions with intuitive charts and customizable reporting tools.",
-      url: "https://analytics-dashboard-kohl-three.vercel.app/",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
-    },
-    {
-      title: "AIGE",
-      description: "A compassionate platform designed to help families coordinate and manage care for their loved ones. Simplifying the complexities of family caregiving with thoughtful tools and support.",
-      url: "https://aige.vercel.app/",
-      image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=600&fit=crop"
-    },
-    {
-      title: "OUSD School Finder",
-      description: "A user-friendly tool to help families find the perfect school in Oakland. Features interactive maps, detailed school information, and comparison tools to make informed educational decisions.",
-      url: "https://schools-eosin.vercel.app/",
-      image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&h=600&fit=crop"
-    },
-    {
       title: "RunGPT",
-      description: "An AI-powered running companion built with ChatGPT, designed to help runners track their progress, get personalized training advice, and achieve their running goals. Combines the power of AI with running expertise.",
+      description: "An AI-powered running coach that gives personalized training advice based on your pace, mileage, and goals.",
+      aiNote: "Defined the system's behavioral boundaries: what it should confidently advise (pacing, weekly volume, race prep) vs. defer on (injury diagnosis, nutrition). Iterated on the prompt architecture to reduce hallucinated training plans and evaluated output quality by comparing advice against VDOT-based coaching standards.",
       url: "https://roger-black.vercel.app/",
       image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop"
     },
     {
+      title: "AIGE",
+      description: "A platform to help families coordinate care for aging loved ones — organizing tasks, communication, and resources in one place.",
+      aiNote: "Scoped what the AI assistant should and shouldn't do: surface relevant caregiving resources and summarize care notes, but never simulate a medical opinion. Designed guardrail logic to catch emotionally sensitive queries and route them to human support rather than generate a response.",
+      url: "https://aige.vercel.app/",
+      image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&h=600&fit=crop"
+    },
+    {
       title: "Tranare",
-      description: "A native iOS running app that seamlessly integrates with Strava to track your latest runs. Features AI-powered coaching that analyzes your running data and provides personalized training advice tailored to your specific running goals.",
+      description: "A native iOS app that connects to Strava and provides AI-powered coaching based on your actual run history.",
+      aiNote: "Designed the retrieval layer to ground coaching advice in real Strava data rather than generic heuristics — preventing drift between what the model assumed about the user and what their training log showed. Measured coaching relevance by tracking whether suggested workouts matched the athlete's recent load.",
       url: "https://apps.apple.com/app/tranare",
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Workforce Job Trends",
+      description: "An analytics platform visualizing real-time labor market data to help teams understand hiring trends and workforce shifts.",
+      url: "https://analytics-dashboard-kohl-three.vercel.app/",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
     }
   ];
 
@@ -57,10 +42,24 @@ const Projects = () => {
           <div className={styles.projectContent}>
             <h3 className={styles.projectTitle}>{project.title}</h3>
             <p className={styles.projectDescription}>{project.description}</p>
-            <a 
-              href={project.url} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            {project.aiNote && (
+              <div style={{
+                margin: '0.75rem 0',
+                padding: '0.75rem',
+                background: '#f9f9f9',
+                borderLeft: '3px solid #111',
+                fontSize: '0.88rem',
+                color: '#444',
+                lineHeight: '1.6'
+              }}>
+                <span style={{ fontWeight: '600', color: '#111', fontSize: '0.75rem', letterSpacing: '0.08em', textTransform: 'uppercase', display: 'block', marginBottom: '0.35rem' }}>AI PM Note</span>
+                {project.aiNote}
+              </div>
+            )}
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.projectLink}
             >
               Visit Project →

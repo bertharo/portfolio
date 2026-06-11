@@ -25,14 +25,14 @@ function App() {
           }}>
             Bert Haro
           </h1>
-          <p style={{ 
-            fontSize: '1.2rem', 
-            color: '#fff', 
+          <p style={{
+            fontSize: '1.2rem',
+            color: '#fff',
             opacity: 0.9,
             marginBottom: '2rem',
             fontWeight: '300'
           }}>
-            Product Leader, Boston Marathoner & Podcast Host
+            AI Product Manager · Boston Marathoner · Podcast Host
           </p>
           <div style={{ 
             display: 'flex', 
@@ -86,16 +86,16 @@ function App() {
           </h2>
           <div style={{ lineHeight: '1.7', color: '#333' }}>
             <p style={{ marginBottom: '1.5rem' }}>
-              I'm a product leader with over 10 years of experience building and scaling software products. I specialize in solving complex business problems and turning ideas into products that people actually use. My expertise spans enterprise SaaS, fintech, and consumer products.
+              I build AI-powered products — defining how systems should behave, how to know when they're failing, and how to iterate toward the right outputs. My work sits at the intersection of product strategy and AI system design: writing behavior specs, designing evaluation frameworks, and owning the full pipeline from prompt architecture to production monitoring.
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
-              Throughout my career, I've led cross-functional teams, launched new product areas, and driven significant business growth. I've helped scale products to over $150MM ARR and boosted user engagement through data-driven design and strategic product decisions.
+              Over 10 years I've shipped products at Workday, Roofstock, and Human Interest — scaling to $150MM ARR and leading cross-functional teams across enterprise SaaS and fintech. I bring the same rigor to AI work: clear problem framing, defined success criteria, and honest failure analysis.
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
-              I hold an MBA from UC Berkeley's Haas School of Business and bring a unique blend of analytical thinking and creative problem-solving to product development. I excel at connecting insights across teams, diving deep into data, and finding elegant solutions to complex challenges.
+              I hold an MBA from UC Berkeley's Haas School of Business. I think in systems, work across disciplines, and move fast without losing precision.
             </p>
             <p>
-              Beyond product management, I'm a dedicated runner who qualified for and completed the Boston Marathon in 2025. This achievement reflects my commitment to setting ambitious goals and the discipline to achieve them.
+              Outside work I qualified for and ran the 2025 Boston Marathon — a useful reminder that ambitious goals require both a plan and the willingness to iterate when the plan breaks down.
             </p>
           </div>
         </section>
