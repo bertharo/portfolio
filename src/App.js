@@ -37,6 +37,9 @@ function App() {
             <p style={{ marginBottom: '1.5rem' }}>
               I hold an MBA from UC Berkeley's Haas School of Business. I think in systems, work across disciplines, and move fast without losing precision.
             </p>
+            <p style={{ marginBottom: '1.5rem' }}>
+              I care a lot about who comes next. I've run a mentorship cohort for early-career product managers — the kind of investment in the next generation that pays off in ways no roadmap captures.
+            </p>
             <p>
               Outside work I qualified for and ran the 2025 Boston Marathon — a useful reminder that ambitious goals require both a plan and the willingness to iterate when the plan breaks down.
             </p>
