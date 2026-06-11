@@ -233,20 +233,14 @@ const Blog = () => {
           color: '#999',
           marginBottom: '0.85rem'
         }}>
-          How This Works
+          Behind the Memo
         </h4>
         <div style={{ fontSize: '0.92rem', color: '#444', lineHeight: '1.7', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
           <p style={{ margin: 0 }}>
-            <strong style={{ color: '#111' }}>Behavior definition.</strong> Each memo is scoped to signal over noise: 4–5 named trends with evidence, and 4–5 action items with a concrete time estimate. The system prompt constrains the model to cite real companies and reject vague "AI is changing everything" framing.
+            This memo writes itself every morning — a GitHub Action calls Claude at 7:05 AM UTC, commits the result, and redeploys the site with no manual steps. The interesting work was getting it to be worth reading: the prompt forces named companies and concrete time estimates, and rejects "AI is changing everything" filler.
           </p>
           <p style={{ margin: 0 }}>
-            <strong style={{ color: '#111' }}>Prompt architecture.</strong> A structured system prompt defines the output schema (JSON with title, summary, trends[], actionItems[]), tone (concise, practitioner-focused), and failure modes to avoid (hype language, duplicate trends, generic advice).
-          </p>
-          <p style={{ margin: 0 }}>
-            <strong style={{ color: '#111' }}>Evaluation & iteration.</strong> Early versions over-indexed on funding news and missed operational AI stories. Adjusted the prompt weighting to balance announcements with "what PMs and engineers should actually do today." Output quality is checked daily by reading the memo as a practitioner, not an editor.
-          </p>
-          <p style={{ margin: 0 }}>
-            <strong style={{ color: '#111' }}>Pipeline.</strong> GitHub Actions runs <code style={{ background: '#eee', padding: '0.1rem 0.3rem', borderRadius: '2px' }}>scripts/generate-ai-memo.js</code> at 7:05 AM UTC, commits the updated JSON, and triggers a Vercel redeploy — zero manual steps.
+            Early versions over-indexed on funding announcements and missed the operational stories practitioners actually care about, so the prompt was rebalanced toward "what should a PM or engineer do differently today." I still read it every morning as a user, not an editor — when it drifts, the prompt gets fixed.
           </p>
         </div>
       </div>

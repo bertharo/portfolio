@@ -29,10 +29,10 @@ function App() {
           <h2 className={styles.sectionTitle}>About</h2>
           <div style={{ lineHeight: '1.8', color: '#333', maxWidth: '680px' }}>
             <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
-              I build AI-powered products — defining how systems should behave, how to know when they're failing, and how to iterate toward the right outputs. My work sits at the intersection of product strategy and AI system design: writing behavior specs, designing evaluation frameworks, and owning the full pipeline from prompt architecture to production monitoring.
+              I build AI-powered products. Most of that work is deciding how a system should behave — what it should say, what it should refuse to do, and how you'd know when it's wrong — then building the feedback loops to keep it honest in production.
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
-              Over 10 years I've shipped products at Workday, Roofstock, and Human Interest — scaling to $150MM ARR and leading cross-functional teams across enterprise SaaS and fintech. I bring the same rigor to AI work: clear problem framing, defined success criteria, and honest failure analysis.
+              Over 10 years I've shipped products at Workday, Roofstock, and Human Interest — scaling to $150MM ARR and leading cross-functional teams across enterprise SaaS and fintech.
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
               I hold an MBA from UC Berkeley's Haas School of Business. I think in systems, work across disciplines, and move fast without losing precision.
