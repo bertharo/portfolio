@@ -2,9 +2,9 @@ import React from 'react';
 
 const projects = [
   {
-    title: "RunGPT",
-    description: "An AI running coach that builds training advice around your pace, mileage, and goals. The hard part wasn't generating plans — it was deciding what the system shouldn't say: it advises on pacing and race prep but defers on injury and nutrition, and its output is checked against VDOT coaching standards rather than vibes.",
-    url: "https://roger-black.vercel.app/",
+    title: "Tranare",
+    description: "A native iOS app that connects to Strava and coaches from your actual run history. The hard part wasn't generating training advice — it was deciding what the system shouldn't say: it advises on pacing and race prep but defers on injury, and everything it suggests is grounded in your real training log, so what the model believes about you can't drift from what your data shows.",
+    url: "https://apps.apple.com/app/tranare",
   },
   {
     title: "kiness.ai",
@@ -12,9 +12,9 @@ const projects = [
     url: "https://aige.vercel.app/",
   },
   {
-    title: "Tranare",
-    description: "A native iOS app that connects to Strava and coaches from your actual run history. Advice is grounded in real training data rather than generic heuristics, so what the model believes about you can't drift from what your log shows.",
-    url: "https://apps.apple.com/app/tranare",
+    title: "tapsa.ai",
+    description: "A navigable map of ideas — enter a topic in science or history and follow connections to things you didn't know to ask about. Every connection is grounded in Wikipedia rather than free-form generation, so each link leads somewhere checkable. No accounts, no ads.",
+    url: "https://tapsa.ai",
   },
   {
     title: "Workforce Job Trends",
