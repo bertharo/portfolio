@@ -2032,5 +2032,55 @@
         "description": "Colorado's 18-day countdown to enforcement is real. If you're in Colorado, build or serve Colorado customers, or operate cross-state, document whether your AI systems meet transparency and risk-mitigation requirements. Expect federal preemption fight, but don't count on it—compliance uncertainty is now a liability risk."
       }
     ]
+  },
+  {
+    "id": 42,
+    "date": "2026-06-13",
+    "title": "Apple Reimagines Siri on Gemini, Anthropic Eyes IPO",
+    "summary": "Apple's WWDC confirmed a Gemini-powered Siri with multi-AI Extensions making Claude available on iPhone for the first time, while Anthropic's confidential S-1 filing sets the stage for a public offering after surpassing OpenAI in private valuation. June is shaping up as the year's most active model release month with Gemini 3.5, Claude 4.8, and open-weight models like MiniMax M3 dramatically shifting what developers can build locally.",
+    "trends": [
+      {
+        "headline": "Apple deploys 1.2T-parameter Gemini Siri",
+        "detail": "Tim Cook announced a custom Gemini model licensed from Google in a $1 billion/year deal, launching with chatbot-style interface, Dynamic Island integration, and personal context access across emails, photos, and messages. Claude 3.5 Sonnet is now an available iPhone option."
+      },
+      {
+        "headline": "Anthropic files for IPO after $965B valuation",
+        "detail": "Following a $65 billion Series H closing on June 2, Anthropic filed a confidential S-1 with the SEC, making it the first AI lab to surpass OpenAI in private market value. Annualized revenue crossed $47 billion this month."
+      },
+      {
+        "headline": "NVIDIA releases Nemotron 3.5 Content Safety",
+        "detail": "A customizable multimodal safety model for enterprise AI with unified text, image, and audio protection, low-latency inference, and regional compliance tuning—addressing critical deployment needs for customer service and content moderation."
+      },
+      {
+        "headline": "Open-weight models challenge cloud dominance",
+        "detail": "MiniMax M3 combines frontier-tier coding with 1-million-token context and native computer use; NVIDIA Cosmos 3 Super enables physical simulation at scale. Combined with frameworks like smolagents, developers can deploy secure systems entirely locally without cloud providers."
+      },
+      {
+        "headline": "ServiceNow launches EVA-Bench 2.0 evaluation",
+        "detail": "An expanded benchmark covering 3 domains, 121 tools, and 213 scenarios to measure AI agent capabilities beyond language understanding—critical as agentic workflows move into enterprise automation."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit Siri integration roadmap for Claude",
+        "description": "If you build on Claude, test how your APIs integrate with Apple's new multi-AI Extensions framework launching in iOS 27 Beta 1. This is your first official iPhone distribution channel—verify prompt compatibility and latency before September release."
+      },
+      {
+        "label": "Stress-test safety models in production",
+        "description": "Download Nemotron 3.5 Content Safety and run it against your current moderation pipeline (text, images, audio). The multimodal coverage closes gaps that text-only safety creates; measure how regional compliance tuning affects false-positive rates for your use cases."
+      },
+      {
+        "label": "Benchmark local vs. API model costs",
+        "description": "Spin up MiniMax M3 locally using open-weight distribution and compare total-cost-of-ownership against Claude API or GPT for your engineering tasks over 30 days. Context window and computer-use capabilities may offset cloud compute for agentic workflows."
+      },
+      {
+        "label": "Map agent capabilities to EVA-Bench",
+        "description": "If you're shipping AI agents, run them through EVA-Bench 2.0's 213 scenarios to uncover gaps in tool use and workflow execution. This benchmark is becoming the industry standard for agent evaluation—use it before investors ask."
+      },
+      {
+        "label": "Monitor Anthropic IPO prospectus timing",
+        "description": "Set a calendar alert for Anthropic's 10-day review window with the SEC. IPO pricing will signal enterprise AI spending appetite and may unlock new startup funding. Track S-1 amendments for revenue breakdowns and customer concentration risk."
+      }
+    ]
   }
 ]
