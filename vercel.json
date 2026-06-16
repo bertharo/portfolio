@@ -1,16 +1,14 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "framework": "create-react-app",
+  "framework": null,
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/memo", "destination": "/memo/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {
-      "source": "/static/(.*)",
+      "source": "/memo/static/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -19,4 +17,4 @@
       ]
     }
   ]
-} 
+}

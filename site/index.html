@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- PRIMARY META -->
+<title>Bert Haro — Enterprise Product Leader</title>
+<meta name="description" content="Bert Haro is a Director of Product Management at Workday who leads enterprise products at scale and stays hands-on with AI. He built tapsa.ai solo and co-taught an AI-native PM cohort to students across several universities." />
+<meta name="author" content="Bert Haro" />
+<meta name="theme-color" content="#FBFAF8" />
+<link rel="canonical" href="https://bertharo.com/" />
+
+<!-- OPEN GRAPH (controls the link preview recruiters see when your URL is pasted into LinkedIn / email) -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Bert Haro — Enterprise Product Leader" />
+<meta property="og:description" content="Director of Product Management at Workday. Leads enterprise products at scale and still builds by hand — built tapsa.ai solo, co-taught an AI-native PM cohort across several universities." />
+<meta property="og:url" content="https://bertharo.com/" />
+<meta property="og:site_name" content="Bert Haro" />
+<meta property="profile:first_name" content="Bert" />
+<meta property="profile:last_name" content="Haro" />
+<!-- TODO Bert: add a 1200x630 og image and uncomment:
+<meta property="og:image" content="https://bertharo.com/og.png" /> -->
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Bert Haro — Enterprise Product Leader" />
+<meta name="twitter:description" content="Director of PM at Workday. Leads at scale, still builds by hand. Built tapsa.ai solo. Co-taught an AI-native PM cohort across several universities." />
+
+<!-- STRUCTURED DATA: this is what disambiguates you from the BMX brand, the Gundam robot,
+     and every other 'Haro' in Google's index. sameAs is the key field. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bert Haro",
+  "url": "https://bertharo.com/",
+  "jobTitle": "Director of Product Management",
+  "worksFor": { "@type": "Organization", "name": "Workday" },
+  "homeLocation": { "@type": "Place", "name": "Berkeley, California" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "UC Berkeley, Haas School of Business" },
+    { "@type": "CollegeOrUniversity", "name": "California State University, Chico" }
+  ],
+  "knowsAbout": [
+    "Enterprise software", "Product Management", "Workforce Planning",
+    "AI product development", "LLM evaluation", "MCP", "Claude API"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/bert-h-15181116",
+    "https://tapsa.ai",
+    "https://ololand.ai"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --paper:#FBFAF8;
+    --ink:#17150F;
+    --ink-soft:#5C584E;
+    --hair:#E3DFD6;
+    --accent:#FF4A24;        /* signal / split-time red — used only on the live link */
+    --accent-ink:#C9300F;
+    --max:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    font-size:17px;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  .mono{font-family:"Space Mono",ui-monospace,Menlo,monospace;}
+
+  .label{
+    font-family:"Space Mono",monospace;
+    font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+
+  header{border-bottom:1px solid var(--hair);}
+  .topbar{display:flex;justify-content:space-between;align-items:center;
+    padding:22px 0;gap:16px;}
+  .topbar .name{font-weight:700;letter-spacing:-.01em;}
+  .topbar nav{display:flex;gap:22px;}
+  .topbar nav a{font-size:14px;text-decoration:none;color:var(--ink-soft);
+    transition:color .15s;}
+  .topbar nav a:hover{color:var(--ink);}
+
+  .hero{padding:88px 0 64px;border-bottom:1px solid var(--hair);}
+  .hero h1{
+    font-size:clamp(38px,7vw,76px);line-height:1.03;font-weight:700;
+    letter-spacing:-.025em;margin:0 0 26px;max-width:15ch;
+  }
+  .hero h1 em{font-style:normal;color:var(--accent-ink);}
+  .hero .lede{font-size:clamp(18px,2.4vw,23px);max-width:56ch;
+    color:var(--ink);margin:0 0 30px;line-height:1.45;}
+  .currently{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:baseline;}
+  .currently .pin{font-size:14px;color:var(--ink-soft);}
+  .currently .pin b{color:var(--ink);font-weight:600;}
+
+  section{padding:66px 0;border-bottom:1px solid var(--hair);}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:34px;}
+  .sec-head h2{font-size:13px;font-weight:700;letter-spacing:.16em;
+    text-transform:uppercase;margin:0;font-family:"Space Mono",monospace;}
+  .sec-head .rule{flex:1;height:1px;background:var(--hair);}
+
+  .proof{display:grid;gap:0;}
+  .row{
+    display:grid;grid-template-columns:34px 1fr auto;gap:20px;align-items:start;
+    padding:22px 0;border-top:1px solid var(--hair);
+  }
+  .row:first-child{border-top:none;}
+  .row .idx{font-family:"Space Mono",monospace;font-size:13px;color:var(--ink-soft);
+    padding-top:3px;}
+  .row .claim h3{margin:0 0 5px;font-size:19px;font-weight:600;letter-spacing:-.01em;}
+  .row .claim p{margin:0;color:var(--ink-soft);font-size:15px;max-width:62ch;line-height:1.5;}
+  .row .art{justify-self:end;padding-top:2px;}
+  .artlink{
+    font-family:"Space Mono",monospace;font-size:13px;text-decoration:none;
+    white-space:nowrap;border:1px solid var(--hair);border-radius:999px;
+    padding:7px 14px;display:inline-flex;align-items:center;gap:7px;
+    transition:border-color .15s,color .15s,background .15s;color:var(--ink);
+  }
+  .artlink:hover{border-color:var(--ink);}
+  .artlink.live{color:var(--accent-ink);border-color:#F3C9BD;}
+  .artlink.live:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .artlink .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 0 rgba(255,74,36,.6);}
+  @media (prefers-reduced-motion:no-preference){
+    .artlink.live .dot{animation:pulse 2.4s infinite;}
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(255,74,36,.5);}
+    70%{box-shadow:0 0 0 7px rgba(255,74,36,0);}
+    100%{box-shadow:0 0 0 0 rgba(255,74,36,0);}
+  }
+  .artlink .static-dot{width:6px;height:6px;border-radius:50%;
+    background:var(--ink-soft);}
+
+  .stack{margin-top:30px;padding-top:24px;border-top:1px solid var(--hair);
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+  .stack .label{margin-right:6px;}
+  .stack span.tool{font-family:"Space Mono",monospace;font-size:13px;
+    color:var(--ink);border:1px solid var(--hair);border-radius:6px;padding:4px 10px;}
+
+  .track{display:grid;gap:0;}
+  .stop{display:grid;grid-template-columns:148px 1fr;gap:24px;
+    padding:20px 0;border-top:1px solid var(--hair);}
+  .stop:first-child{border-top:none;}
+  .stop .when{font-family:"Space Mono",monospace;font-size:13px;color:var(--ink-soft);
+    padding-top:3px;}
+  .stop .what h3{margin:0 0 3px;font-size:18px;font-weight:600;letter-spacing:-.01em;}
+  .stop .what .org{color:var(--accent-ink);font-weight:600;}
+  .stop .what p{margin:5px 0 0;color:var(--ink-soft);font-size:15px;max-width:64ch;line-height:1.5;}
+
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:54px;}
+  .duo h3{font-size:18px;margin:0 0 12px;font-weight:600;}
+  .duo p{margin:0 0 8px;color:var(--ink-soft);font-size:15px;line-height:1.55;}
+  .duo .pr{font-family:"Space Mono",monospace;color:var(--ink);}
+
+  .contact{padding:72px 0 28px;border-bottom:none;}
+  .contact h2{font-size:clamp(26px,4vw,40px);font-weight:700;letter-spacing:-.02em;
+    margin:0 0 24px;max-width:20ch;}
+  .links{display:flex;flex-wrap:wrap;gap:12px;}
+  .links a{font-family:"Space Mono",monospace;font-size:14px;text-decoration:none;
+    border:1px solid var(--hair);border-radius:999px;padding:11px 18px;
+    transition:border-color .15s,background .15s,color .15s;}
+  .links a:hover{border-color:var(--ink);}
+  .links a.primary{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .links a.primary:hover{background:var(--accent);border-color:var(--accent);}
+
+  footer{padding:30px 0 60px;}
+  footer .fr{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    color:var(--ink-soft);font-size:13px;}
+
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px;}
+
+  @media (max-width:720px){
+    body{font-size:16px;}
+    .topbar nav{display:none;}
+    .hero{padding:60px 0 48px;}
+    .row{grid-template-columns:26px 1fr;}
+    .row .art{grid-column:2;justify-self:start;padding-top:10px;}
+    .stop{grid-template-columns:1fr;gap:6px;}
+    .stop .when{padding-top:0;}
+    .duo{grid-template-columns:1fr;gap:36px;}
+  }
+</style>
+</head>
+
+<body>
+<header>
+  <div class="wrap topbar">
+    <span class="name">Bert Haro</span>
+    <nav>
+      <a href="#proof">Proof</a>
+      <a href="#track">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO: the true differentiator — director-scope leadership + genuine hands-on building -->
+  <section class="hero" style="border-bottom:1px solid var(--hair);">
+    <div class="wrap">
+      <p class="label" style="margin:0 0 22px;">Enterprise Product · Berkeley, CA</p>
+      <h1>I lead enterprise products at scale — and still <em>build by hand</em>.</h1>
+      <p class="lede">Director of Product Management at Workday, where I own a nine-figure-ARR product line serving more than a thousand enterprise customers — full stack, from C-suite strategy to engineering spec. I haven't put the tools down: I built tapsa.ai solo on the Claude API, and I co-taught an AI-native PM cohort to students across several universities.</p>
+      <div class="currently">
+        <span class="pin"><b>Now</b> · Director of PM, Workday — Workforce Planning</span>
+        <span class="pin"><b>Built solo</b> · tapsa.ai</span>
+        <span class="pin"><b>Taught</b> · AI-Native PM cohort, multi-university</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF: every claim coupled to something a recruiter can click and verify -->
+  <section id="proof">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Proof, not adjectives</h2><span class="rule"></span>
+      </div>
+      <div class="proof">
+
+        <div class="row">
+          <div class="idx">01</div>
+          <div class="claim">
+            <h3>Built tapsa.ai solo</h3>
+            <p>An AI knowledge-graph product I built end to end on my own — Claude API, Cursor, Vercel. No team, no co-founder: just me shipping it and debugging the real post-launch failures on nights and weekends. It's live.</p>
+          </div>
+          <div class="art">
+            <a class="artlink live" href="https://tapsa.ai" target="_blank" rel="noopener">
+              <span class="dot"></span>tapsa.ai
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="idx">02</div>
+          <div class="claim">
+            <h3>Lead a nine-figure enterprise product line</h3>
+            <p>As Director of Product Management I own one of Workday's workforce planning product lines — nine figures in ARR, more than a thousand enterprise customers, and a team of senior and staff PMs. I operate the full stack: strategy with the C-suite, spec with engineering.</p>
+          </div>
+          <div class="art">
+            <a class="artlink" href="https://www.linkedin.com/in/bert-h-15181116" target="_blank" rel="noopener">
+              <span class="static-dot"></span>Workday
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="idx">03</div>
+          <div class="claim">
+            <h3>Co-taught an AI-native PM cohort</h3>
+            <p>Designed and ran a four-week AI-native PM cohort alongside a university faculty member — teaching students from UC Berkeley, UC Davis, and Northwestern to get genuinely hands-on with AI tools, not just theorize about them.</p>
+          </div>
+          <div class="art">
+            <a class="artlink" href="https://www.linkedin.com/in/bert-h-15181116" target="_blank" rel="noopener">
+              <span class="static-dot"></span>Cohort
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="idx">04</div>
+          <div class="claim">
+            <h3>Advise ololand.ai</h3>
+            <p>Enterprise AI product and go-to-market input for an early-stage team.</p>
+          </div>
+          <div class="art">
+            <a class="artlink" href="https://ololand.ai" target="_blank" rel="noopener">
+              <span class="static-dot"></span>ololand.ai
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="stack">
+        <span class="label">Hands-on stack</span>
+        <span class="tool">Claude API</span>
+        <span class="tool">Claude Code</span>
+        <span class="tool">MCP</span>
+        <span class="tool">LLM evals</span>
+        <span class="tool">Cursor</span>
+        <span class="tool">Vercel</span>
+        <span class="tool">Render</span>
+        <span class="tool">Neon</span>
+        <span class="tool">SQL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE: order carries meaning (progression), so it's a true sequence -->
+  <section id="track">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Track record</h2><span class="rule"></span>
+      </div>
+      <div class="track">
+
+        <div class="stop">
+          <div class="when">2021 — Now</div>
+          <div class="what">
+            <h3>Director of Product Management · <span class="org">Workday</span></h3>
+            <p>Senior Manager &rarr; Director. Own one of the workforce planning product lines — nine-figure ARR, a four-digit enterprise customer base, a team of senior and staff PMs. More than doubled the business over three years and delivered a C-suite customer demo executives called a &ldquo;mic-drop moment.&rdquo;</p>
+          </div>
+        </div>
+
+        <div class="stop">
+          <div class="when">2023 — Now</div>
+          <div class="what">
+            <h3>Solo builder &amp; instructor · <span class="org">tapsa.ai · Berkeley Haas · ololand.ai</span></h3>
+            <p>Built tapsa.ai solo, co-taught an AI-native PM cohort across several universities, and advise an early-stage enterprise AI team. Hands-on daily with the Claude API, Claude Code, MCP, and LLM evals.</p>
+          </div>
+        </div>
+
+        <div class="stop">
+          <div class="when">2021</div>
+          <div class="what">
+            <h3>Senior Product Manager · <span class="org">Human Interest</span></h3>
+            <p>Owned the largest self-serve 401(k) product in a compliance-heavy environment. Raised participation to 70%, grew AUM to $2B, built the A/B framework from scratch.</p>
+          </div>
+        </div>
+
+        <div class="stop">
+          <div class="when">2020 — 2021</div>
+          <div class="what">
+            <h3>Product Manager · <span class="org">Roofstock</span></h3>
+            <p>Owned seller self-service for a real-estate marketplace. Launched a listing flow that grew active supply 30% and cut cycle time 20%.</p>
+          </div>
+        </div>
+
+        <div class="stop">
+          <div class="when">2015 — 2020</div>
+          <div class="what">
+            <h3>APM &rarr; Senior PM · <span class="org">Workday</span></h3>
+            <p>Shipped Workday's first AI-driven ERP automation — machine-learning anomaly detection on millions of financial journal lines, cutting enterprise month-end close time 30%.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + THE HUMAN -->
+  <section>
+    <div class="wrap duo">
+      <div>
+        <p class="label" style="margin:0 0 16px;">Education</p>
+        <h3>MBA · UC Berkeley, Haas</h3>
+        <p>2022</p>
+        <h3 style="margin-top:22px;">BA, International Relations · CSU Chico</h3>
+        <p>2013</p>
+      </div>
+      <div>
+        <p class="label" style="margin:0 0 16px;">Off the clock</p>
+        <h3>Competitive marathoner</h3>
+        <p><span class="pr">2:46</span> personal best · Boston qualifier. Running is the control system — effort and outcome stay honestly coupled, the same way I want a product to behave.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="label" style="margin:0 0 18px;">Get in touch</p>
+      <h2>I like talking with people who build things. Say hello.</h2>
+      <div class="links">
+        <a class="primary" href="mailto:bert.haro@proton.me">bert.haro@proton.me</a>
+        <a href="https://www.linkedin.com/in/bert-h-15181116" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://tapsa.ai" target="_blank" rel="noopener">tapsa.ai</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap fr">
+    <span>Bert Haro · Berkeley, California</span>
+    <span class="mono">Enterprise Product</span>
+  </div>
+</footer>
+</body>
+</html>

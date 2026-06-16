@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bertharo.com",
+  "homepage": "/memo",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0",
     "@testing-library/dom": "^10.4.0",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "BUILD_PATH=build/memo react-scripts build && node scripts/assemble-static.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
