@@ -2912,5 +2912,55 @@
         "description": "Track two key dates for Claude Fable 5 restoration: July 8 (privacy policy with gov ID verification launches) and August 1 (NSA/Treasury 60-day frontier model framework deadline). If your infrastructure requires Fable 5, this signals whether to plan on limited access, US-citizen-only access, or full restoration. Document your dependency chain and contingency models in the meantime."
       }
     ]
+  },
+  {
+    "id": 60,
+    "date": "2026-07-01",
+    "title": "OpenAI Launches GPT-5.6 Models; Anthropic Releases Claude Sonnet 5",
+    "summary": "OpenAI previewed GPT-5.6 (Sol, Terra, Luna) with advanced reasoning capabilities and high capability risk classifications, while Anthropic released Claude Sonnet 5 this week. These releases mark the acceleration of frontier model deployments paired with increasingly sophisticated safety frameworks. For teams building AI products, this means handling more capable but more tightly governed models—and preparing for the shift toward agentic AI as the default architecture.",
+    "trends": [
+      {
+        "headline": "OpenAI GPT-5.6 Models Enter Limited Preview",
+        "detail": "OpenAI announced GPT-5.6 Sol, Terra, and Luna with 31.5% GeneBench-Pro performance, limited preview for government-vetted partners before broader release. Models classified as High capability in cybersecurity and bioweapon risks, requiring tailored safeguards and 700,000+ GPU hours of red teaming for jailbreak detection."
+      },
+      {
+        "headline": "Anthropic Claude Sonnet 5 Launches Production Ready",
+        "detail": "Claude Sonnet 5 released June 30 as the latest frontier reasoning model. Matches leading alternatives on coding benchmarks with breakthrough performance, available via Anthropic API and AWS Bedrock with clear pricing at $15/$75 per 1M tokens."
+      },
+      {
+        "headline": "GitHub Copilot Shifts to Metered AI Credits Billing",
+        "detail": "Microsoft moved Copilot from unlimited subscription to usage-based GitHub AI Credits ($0.01 each) effective June 1, driven by escalating inference costs from complex coding sessions. Industry-wide shift away from all-you-can-eat pricing as AI inference becomes expensive at scale."
+      },
+      {
+        "headline": "Major Banks Accelerate Agentic AI Hiring for 2026",
+        "detail": "Lloyds Banking Group recruiting 300 AI specialists for agentic AI (data scientists, engineers, responsible AI experts). Santander operating 280 process automation agents in production with €1B revenue target 2026-2028. HSBC partnering with Google Cloud for 200+ new AI use cases."
+      },
+      {
+        "headline": "Gemini 3.1 Flash and Pro Image Models Now Available",
+        "detail": "Google released Gemini 3.1 Flash Image ($0.50/$3 per 1M) and Gemini 3 Pro Image ($2/$12) with native image capabilities. Represents acceleration toward multimodal agentic workflows vs sequential model calls, lowering latency for vision tasks."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Compare GPT-5.6 vs Claude Sonnet 5 benchmarks",
+        "description": "Run 5-10 test prompts on your actual product use cases through both models via their APIs. Track latency, hallucination rate, and cost-per-output. Decision urgency: both are in production now; delaying benchmarking means building on yesterday's winner. 25 minutes."
+      },
+      {
+        "label": "Audit current AI inference costs monthly",
+        "description": "Pull GitHub Copilot, API, and LLM inference spend from the past 30 days. Map usage patterns to understand which features drive cost. GitHub's shift to metered billing affects teams using Copilot—now is the time to model true per-request economics. 20 minutes."
+      },
+      {
+        "label": "Evaluate agentic AI readiness for your team",
+        "description": "List 2-3 repetitive workflows (data processing, report generation, customer research) that could run as autonomous agents. Check if your current models and infrastructure support tool-use, memory persistence, and error handling. Santander's 280 agents prove this works at scale. 30 minutes."
+      },
+      {
+        "label": "Test Gemini 3 image models on your visual tasks",
+        "description": "If you handle image analysis, try Gemini 3.1 Flash Image on 3-5 real examples (product screenshots, user uploads, etc). Compare output quality and latency to your current solution. Flash pricing ($0.50/$3) makes testing cheap. Document whether native multimodal beats your pipeline. 20 minutes."
+      },
+      {
+        "label": "Schedule safety and governance review",
+        "description": "GPT-5.6's high capability flags in cybersecurity and bio domains now require documented risk assessment for enterprise use. Set 60-min stakeholder call to review deployment guardrails before adopting new frontier models in production. Non-negotiable for regulated industries. 5 min to schedule."
+      }
+    ]
   }
 ]
