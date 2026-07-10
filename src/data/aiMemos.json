@@ -3358,5 +3358,55 @@
         "description": "Claude Fable 5 is now available at production pricing ($10 input / $50 output per 1M tokens) after export control lift. Compare this against your current frontier model spend on pure coding and agentic tasks. For teams doing heavy code generation, the SWE-Bench Pro performance (80.3% highest in market) may justify the cost even versus cheaper alternatives. Run a 10-task benchmark against your current model."
       }
     ]
+  },
+  {
+    "id": 69,
+    "date": "2026-07-10",
+    "title": "Fable 5 Shifts to Credits as Chinese Models Capture Enterprise AI",
+    "summary": "Claude Fable 5 moved to usage-based billing on July 8, making it the most expensive frontier model at $10/$50 per million tokens, while CNBC reported 30-46% of enterprise AI token usage now flows to Chinese models like GLM-5.2. The shift accelerates the advisor model pattern where cheap alternatives handle routine tasks and frontier models are reserved for hard problems only.",
+    "trends": [
+      {
+        "headline": "Fable 5 Billing Shift Reshapes Enterprise Economics",
+        "detail": "Starting July 8, Claude Fable 5 requires paid credits at $10 input/$50 output per million tokens for all users. A single agentic coding session processing 2 million output tokens now costs $100 on Fable 5 versus $20 on Sonnet 5 at introductory pricing, forcing teams to audit routing configurations and evaluate capability trade-offs immediately."
+      },
+      {
+        "headline": "Chinese AI Models Dominate Enterprise Token Usage",
+        "detail": "CNBC investigation confirmed 30-46% of US enterprise AI token usage flows to Chinese models, driven by cost economics (60-90% cheaper) and comparable performance within 5-10 percentage points on routine tasks. GLM-5.2 scored 62.1% on SWE-bench Pro, outperforming GPT-5.5 at 58.6%, with MIT licensing enabling global deployment without regional restrictions."
+      },
+      {
+        "headline": "OpenAI Expands GPT-5.6 to Public After Government Review",
+        "detail": "OpenAI rolled out public access to GPT-5.6 Sol, Terra, and Luna models after initial government-vetted release. Sol is positioned as the strongest model yet with major improvements in coding, biology, and cybersecurity, marking a shift away from the restricted-access model that grounded frontier models for weeks."
+      },
+      {
+        "headline": "Gemini 3.5 Pro Finally Launches with 2M Context Window",
+        "detail": "Gemini 3.5 Pro is rolling out after missing May and June targets, featuring a 2-million-token context window (double Fable 5 and Opus 4.8), Deep Think reasoning gated to $250/month tier, and pricing starting at $1.25/$10 per million tokens—the cheapest frontier-tier model available."
+      },
+      {
+        "headline": "UN Governance Dialogue Opens While Adoption Accelerates",
+        "detail": "UN Global Dialogue on AI Governance began July 6 with 169 countries, but 75% of enterprise organizations remain in pilot phases. H1 2026 AI spending reached $4.2 billion (nearly double H1 2025), creating collision between governance timelines and production deployment timelines as 25% of enterprises already run frontier models at scale."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit Claude Fable 5 routing immediately",
+        "description": "Review production APIs and applications using claude-fable-5 model calls. Check whether the 6-point performance gain over Sonnet 5 (80%+ vs 63.2% on SWE-bench) justifies the 5x cost premium ($50 vs $10 output tokens). Set explicit credit limits to prevent unexpected bills from agentic sessions. Most enterprise workflows should default to Sonnet 5 at $2/$10 introductory pricing."
+      },
+      {
+        "label": "Evaluate Chinese open-weight alternatives for cost savings",
+        "description": "Test GLM-5.2 (62.1% SWE-bench) or Z.ai's ZCode ($1.40/$4.40 per million tokens) on representative workloads in non-sensitive environments. Compare output quality and latency to Claude and GPT models on your specific use cases. For teams with data sovereignty requirements or cost constraints, the advisor model pattern (cheap defaults, expensive escalation) becomes mandatory economics."
+      },
+      {
+        "label": "Request GPT-5.6 Sol preview access for coding pipelines",
+        "description": "Apply for early access to GPT-5.6 Sol, Terra, or Luna models now rolling to public. Test 54% improved token efficiency on agentic coding tasks against Claude Fable 5. Assess whether Sol's biology and cybersecurity capabilities unlock new use cases for your team. General availability targeting mid-July makes this a this-week evaluation window."
+      },
+      {
+        "label": "Benchmark Gemini 3.5 Pro context window for monorepos",
+        "description": "Test Gemini 3.5 Pro (2M context) on large monorepos or document-heavy workflows where context window is the bottleneck. At $1.25/$10 pricing, it undercuts all competitors. Request Vertex AI enterprise preview access. Confirm latency and Deep Think reasoning cost before committing to production traffic on the Ultra tier ($250/month)."
+      },
+      {
+        "label": "Map governance exposure before mid-July announcements",
+        "description": "Document which frontier models your organization depends on and how critical export control scenarios impact revenue. Monitor the White House voluntary AI standards framework announcement (expected this week) and plan compliance steps. Note that organizations already running Fable 5 or GPT-5.6 in production are ahead of governance timelines—use that window to optimize before new rules land."
+      }
+    ]
   }
 ]
