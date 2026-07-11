@@ -3408,5 +3408,55 @@
         "description": "Document which frontier models your organization depends on and how critical export control scenarios impact revenue. Monitor the White House voluntary AI standards framework announcement (expected this week) and plan compliance steps. Note that organizations already running Fable 5 or GPT-5.6 in production are ahead of governance timelines—use that window to optimize before new rules land."
       }
     ]
+  },
+  {
+    "id": 70,
+    "date": "2026-07-11",
+    "title": "OpenAI GPT-5.6 and Grok 4.5 launch amid Chinese model surge dominance",
+    "summary": "OpenAI's GPT-5.6 (Sol, Terra, Luna) reached general availability July 9 as ChatGPT's new default, while xAI's Grok 4.5 launched July 8 as a cost-effective coding-focused alternative. Meanwhile, Chinese AI models now capture 30-46% of enterprise token usage across US developer platforms, fundamentally shifting the competitive landscape and pricing dynamics for every AI team.",
+    "trends": [
+      {
+        "headline": "GPT-5.6 becomes ChatGPT default with three-tier pricing",
+        "detail": "OpenAI's GPT-5.6 family (Sol flagship, Terra balanced, Luna fast) launched to general availability July 9 after government safety review. Sol is tuned for biology, chemistry, and cybersecurity work with higher-tier pricing; Terra and Luna offer faster, cheaper alternatives for production use cases."
+      },
+      {
+        "headline": "Grok 4.5 targets coding teams at $2/$6 per 1M tokens",
+        "detail": "xAI released Grok 4.5 July 8 as a Cursor-trained coding model positioned as faster and cheaper than Opus 4.8 ($5/$25). Elon Musk describes it as comparable to Opus 4.7 in capability but more efficient, now the default in Grok app for X Premium+ subscribers."
+      },
+      {
+        "headline": "Chinese models dominate 30-46% of US enterprise API usage",
+        "detail": "CNBC investigation revealed Chinese AI models account for 30-46% of enterprise token volume through OpenRouter gateway, with average token costs 60-90% cheaper than OpenAI and Anthropic alternatives. This represents a massive shift from 11% average share just 12 months ago."
+      },
+      {
+        "headline": "Anthropic Fable 5 now requires paid usage credits starting July 8",
+        "detail": "Claude Pro users ($17/month) now pay $10 per million input tokens and $50 per million output tokens for Fable 5 access, while Sonnet 5 and Opus 4.8 remain included. Claude Max ($100/month) follows the same credit structure."
+      },
+      {
+        "headline": "China AI companion law forces Doubao to shut agent features July 15",
+        "detail": "ByteDance's Doubao (345M monthly active users) is pulling all AI agent features by July 15 to comply with China's new anthropomorphic AI regulation. Users can view agent data in read-only mode until October 15, after which it becomes permanently inaccessible."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Test GPT-5.6 Sol on specialized work this week",
+        "description": "GPT-5.6 Sol is now available as ChatGPT default and targets biology, chemistry, and cybersecurity applications. If your team works in these domains or handles complex reasoning tasks, spend 15 minutes testing Sol on your current biggest bottleneck to understand if the quality jump justifies higher costs versus Terra or Luna variants."
+      },
+      {
+        "label": "Benchmark Grok 4.5 against your current coding LLM",
+        "description": "At $2/$6 per 1M tokens versus Opus's $5/$25, Grok 4.5 represents 60%+ cost savings for coding-heavy workflows. Run five identical coding tasks through both models in Cursor or the xAI console to validate whether the speed and cost trade-off makes sense for your team's primary coding assistant."
+      },
+      {
+        "label": "Audit your API token spend by model origin today",
+        "description": "Pull your gateway or API dashboard data to see what percentage of your token volume flows to Chinese models versus US-based ones. With Chinese models capturing 30-46% of enterprise usage and pricing 60-90% cheaper, this visibility directly impacts your Q3 AI infrastructure budget and model selection strategy."
+      },
+      {
+        "label": "Evaluate Claude alternative if using Fable 5 heavily",
+        "description": "Fable 5 now requires purchase by token with no flat-fee option. If your team relies on this model, calculate your July usage and compare total cost against switching to Claude Sonnet 5 (introductory pricing $2/$10 through August 31) or another flagship model to lock in better unit economics."
+      },
+      {
+        "label": "Review China AI regulatory risk for product roadmaps",
+        "description": "If you're building with Chinese AI models or planning to, Doubao's forced agent shutdown July 15 signals Beijing is enforcing new compliance rules fast. Spend 20 minutes reviewing whether your product's AI architecture complies with the anthropomorphic AI regulation if users are in China or if you're considering Chinese market expansion."
+      }
+    ]
   }
 ]
