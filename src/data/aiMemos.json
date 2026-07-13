@@ -3508,5 +3508,55 @@
         "description": "With Grok 4.5, Gemini 3.5 Pro, and Meta Muse Spark 1.1 all arriving this week, run a 30-minute benchmark of your top 3 use cases (coding, reasoning, knowledge) against 2-3 of these models. The winner-take-all pricing dynamics mean routing the right task to the right model can cut monthly LLM costs 15-30%."
       }
     ]
+  },
+  {
+    "id": 72,
+    "date": "2026-07-13",
+    "title": "Meta Launches Muse Image Model; Apple Sues OpenAI for Trade Secrets",
+    "summary": "Two major developments shape the week: Meta released Muse, a competitive image generation tool integrated into Meta AI with photo restoration and artistic effects, while Apple filed a lawsuit against OpenAI alleging trade secret theft through departing employees. Enterprises are shifting from AI experimentation to measurable deployment in core workflows, with governance and process redesign becoming the key differentiators between success and failure.",
+    "trends": [
+      {
+        "headline": "Meta Muse challenges Adobe and Google image tools",
+        "detail": "Meta launched Muse on July 7, 2026, offering photo restoration, style transformations, room restyling, and surreal scene editing. Users can reference personal images to generate outputs across dozens of artistic styles, positioning it directly against Adobe Firefly and Google Imagen."
+      },
+      {
+        "headline": "Enterprise AI adoption climbs to 71% across business functions",
+        "detail": "Organizations using generative AI in at least one business function jumped from 33% in 2023 to 71% by 2024 and continue climbing in 2026. The shift is away from isolated chatbots toward embedded AI in finance reconciliation, customer support triage, code review, and marketing production."
+      },
+      {
+        "headline": "Claude Sonnet 5 becomes default model with 1M token context",
+        "detail": "Released June 30, Claude Sonnet 5 now powers Claude's free and Pro plans with 63.2% on SWE-Bench Pro for agentic coding (up from Sonnet 4.6's 58.1%). Introductory API pricing at $2/$10 per million tokens through August 31, then $3/$15 after."
+      },
+      {
+        "headline": "Google Photos adds AI-powered Video Remix feature",
+        "detail": "Google launched Video Remix powered by Gemini Omni, transforming ordinary videos into stylized clips with cinematic relighting, background swapping, and artistic effects. Rolling out to AI Plus, Pro, and Ultra subscribers starting July 8, 2026."
+      },
+      {
+        "headline": "White House finalizes voluntary AI release standards with labs",
+        "detail": "The Financial Times confirmed the White House is in advanced talks with OpenAI, Google, and Anthropic to finalize voluntary standards for frontier AI model releases. The framework establishes benchmarks, testing timelines, and access rules for advanced models, with announcement expected soon."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Test Claude Sonnet 5 before pricing increase ends",
+        "description": "Spin up a quick API test on the new Claude Sonnet 5 model before August 31 introductory pricing expires. Compare its agentic performance on a real coding or reasoning task against your current baseline. The 2x price increase after August makes this window critical for cost-baseline validation."
+      },
+      {
+        "label": "Review enterprise AI governance checklist today",
+        "description": "Pull your current AI deployment and audit it against three governance criteria: data-access rules, human review checkpoints, and quality metrics. McKinsey data shows firms that redesign processes around AI rather than bolting it on see measurable ROI. Spend 20 minutes documenting which processes need redesign."
+      },
+      {
+        "label": "Evaluate Meta Muse for creative workflows in production",
+        "description": "If you ship visual content or marketing materials, test Meta Muse against your current image generation pipeline. It's integrated into Meta AI and free to experiment with. Check if photo restoration or artistic style transforms unlock workflows you couldn't do before cost-effectively."
+      },
+      {
+        "label": "Map AI capabilities to your PM workflow bottleneck",
+        "description": "Identify your single largest PM workflow pain: research synthesis, roadmap prioritization, writing PRDs, or customer discovery. Spend 15 minutes testing the recommended tool for that stage (Perspective AI for discovery, Claude for writing, Amplitude for analytics). Better to master one tool deeply than dabble in ten."
+      },
+      {
+        "label": "Monitor White House AI standards announcement for compliance",
+        "description": "Bookmark the expected White House announcement on voluntary AI release standards. Once published, review it against your current AI deployment to identify any gaps in benchmarking, testing, or access controls. Flag gaps for your AI ethics or compliance team within a day of announcement."
+      }
+    ]
   }
 ]
