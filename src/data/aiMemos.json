@@ -3654,5 +3654,51 @@
         "description": "Today's China deadline demonstrates platform shutdown risk. Document which AI tools hold critical data for your workflows, establish quarterly export/backup protocols, and audit vendor terms-of-service for data retention and access guarantees."
       }
     ]
+  },
+  {
+    "id": 75,
+    "date": "2026-07-16",
+    "title": "GPT-5.6 Goes Live; Gemini, Claude, and Grok Compete Intensely",
+    "summary": "The July 2026 AI model wave has reached its peak with OpenAI's GPT-5.6 family (Sol, Terra, Luna) now in general availability after government evaluation, while Anthropic's Claude Sonnet 5 and xAI's Grok 4.5 launched weeks earlier. This unprecedented clustering of frontier model releases from three major providers signals a new competitive reality: frontier AI quality is no longer a single-provider advantage, and success depends on building model-agnostic architectures rather than betting on one model.",
+    "trends": [
+      {
+        "headline": "GPT-5.6 family launches publicly after government safety review",
+        "detail": "OpenAI released GPT-5.6 Sol, Terra, and Luna to general availability on July 9 after weeks of gated preview with government partners. Sol targets coding, biology, and cybersecurity; Terra offers GPT-5.5 performance at half cost; Luna prioritizes speed and affordability. The deliberate government review process set a new precedent for frontier model releases."
+      },
+      {
+        "headline": "Claude Sonnet 5 and Grok 4.5 both shipped in same window",
+        "detail": "Anthropic released Claude Sonnet 5 on June 30 at $2/$10 per million tokens through August 31, making it the default for Free and Pro plans. xAI launched Grok 4.5 in early July as an Opus-class model positioned as faster and lower-cost. All three major labs now have competitive frontier offerings within weeks of each other."
+      },
+      {
+        "headline": "Claude Code desktop gains sandboxed browser for docs interaction",
+        "detail": "Claude Code's desktop app now includes a built-in sandboxed browser allowing Claude to pull up documentation, designs, and websites while interacting with them like local dev servers. The configurable sandbox lets users choose whether sessions persist, expanding Claude's usefulness for developers who need web context without leaving the IDE."
+      },
+      {
+        "headline": "Google expands Gemini in Chrome globally with iOS coming",
+        "detail": "Google is expanding Gemini in Chrome to UK desktop users with iOS support arriving next month. The assistant can summarize content, compare information across tabs, and integrates with Google Calendar, Maps, Gmail, and YouTube without leaving the current page, competing directly with OpenAI's advanced capabilities."
+      },
+      {
+        "headline": "Meta releases Muse Image and previews Muse Video multimodal",
+        "detail": "Meta launched Muse Image on July 7 as its most advanced image generation model, capable of understanding complex prompts, blending photos, and creating functional QR codes. The company is also previewing Muse Video and released Muse Spark 1.1 on July 9, integrating seamlessly with Meta AI apps on Instagram and WhatsApp."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Test GPT-5.6 Sol against your actual workflows",
+        "description": "Try GPT-5.6 Sol's coding, reasoning, or domain-specific capabilities (biology, cybersecurity) on real tasks your team handles today. Run it side-by-side with your current model for 3-5 representative problems, measure latency and output quality, then document which jobs it outperforms on. This 20-minute audit beats waiting for benchmarks."
+      },
+      {
+        "label": "Audit your model lock-in and build flexibility",
+        "description": "Inventory where your codebase hardcodes a specific model (GPT-4, Claude, Grok). Identify 2-3 places where swapping models would be easy vs. where it requires refactoring. Start with one abstraction layer (routing requests through a unified interface) so that next month's model release becomes a drop-in upgrade, not a rewrite."
+      },
+      {
+        "label": "Evaluate Claude Code desktop for your PM or engineer team",
+        "description": "Install Claude Code desktop and test the new sandboxed browser on a technical spec or API documentation review. Time how long it takes to pull context from docs vs. manual lookups. If it saves 10+ minutes per session, roll out access to technical PMs and product engineers who prototype features."
+      },
+      {
+        "label": "Benchmark Claude Sonnet 5 pricing through August 31",
+        "description": "Calculate your token spend on Claude models in a typical sprint. Claude Sonnet 5's introductory pricing ($2/$10 per 1M tokens) is locked through August 31 before default pricing takes effect. If you're using Claude at scale, this is the window to run cost analysis and potential negotiation with Anthropic's sales team."
+      }
+    ]
   }
 ]
