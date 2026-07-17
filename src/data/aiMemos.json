@@ -3700,5 +3700,55 @@
         "description": "Calculate your token spend on Claude models in a typical sprint. Claude Sonnet 5's introductory pricing ($2/$10 per 1M tokens) is locked through August 31 before default pricing takes effect. If you're using Claude at scale, this is the window to run cost analysis and potential negotiation with Anthropic's sales team."
       }
     ]
+  },
+  {
+    "id": 76,
+    "date": "2026-07-17",
+    "title": "Gemini 3.5 Pro Launch Collides with Xi at Shanghai AI Conference",
+    "summary": "Today marks the biggest AI convergence of 2026: Google launches Gemini 3.5 Pro with 2M token context and Deep Think reasoning, while President Xi Jinping personally attends Shanghai's World AI Conference for the first time since 2018, signaling China's top-tier commitment to AI dominance. The day encapsulates the entire year's story—Western innovation meets Eastern ambition, frontier models are now functionally similar across providers, and the real advantage shifts to implementation rather than model selection.",
+    "trends": [
+      {
+        "headline": "Gemini 3.5 Pro arrives after six-week delay",
+        "detail": "Google's flagship ships with 2M token context window, Deep Think reasoning on the $250/month Ultra tier, and API pricing at $1.25 input/$10 output per million tokens. It arrives a week after GPT-5.6 Sol and nine days after Grok 4.5, completing a three-frontier-model convergence that narrows the quality gap between all major providers."
+      },
+      {
+        "headline": "FLI Safety Index grades all labs mediocre at best",
+        "detail": "Anthropic earned the highest grade (C+) while OpenAI and Google DeepMind landed at C, Meta at D+, and xAI/DeepSeek/Mistral effectively failed. The index measures risk management, transparency, and whether labs honor safety commitments—finding that even leaders perform at a mediocre level."
+      },
+      {
+        "headline": "Moonshot AI releases Kimi K3 with 2.8T parameters",
+        "detail": "The first open-weight model in the 3-trillion-parameter class now available in Kimi App/Work/Code/API with full weights shipping July 27. It features Kimi Delta Attention and 1M-token native vision context, positioning the open-source tier to compete directly with frontier models."
+      },
+      {
+        "headline": "29 countries sign WAICO agreement in Shanghai",
+        "detail": "A new World Artificial Intelligence Cooperation Organization established as an independent intergovernmental body headquartered in Shanghai with signatories including Russia, Brazil, Pakistan, Indonesia, and others. This represents the clearest institutional separation between East-West AI governance."
+      },
+      {
+        "headline": "OpenAI proposes 5% government equity stake worth $42.6B",
+        "detail": "Sam Altman pitched the idea directly to President Trump, Commerce Secretary Lutnick, and Treasury Secretary Bessent as part of a broader proposal for frontier AI firms to route 5% of equity into an Alaska-style public wealth fund. This follows June's government-mandated safety review of GPT-5.6."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Test Gemini 3.5 Pro on your actual workload",
+        "description": "If your team uses Claude or GPT-5.6 today, run Gemini 3.5 Pro on the same tasks this morning. The leaked specs (2M context, Deep Think reasoning) matter less than whether it actually beats your current default on your specific work. Use the $250/month Ultra tier for a week and measure quality on real tasks—this is the only way to make a defensible model choice when all three are now functionally similar on benchmarks."
+      },
+      {
+        "label": "Audit your AI safety and transparency practices now",
+        "description": "The FLI report shows mediocre grades even for leaders. Spend 30 minutes documenting: (1) what AI systems you use in production, (2) what safety testing you run before deployment, (3) whether you can audit model decisions after they're made. Use this as ammunition for a conversation with security/compliance about your AI governance baseline."
+      },
+      {
+        "label": "Build model-agnostic infrastructure before next wave",
+        "description": "Stop optimizing for one model. Spend this sprint refactoring your prompts, eval sets, and API calls to be provider-agnostic so you can swap Gemini/GPT/Claude as performance or pricing changes. When new models ship every 3 days, your advantage comes from flexibility, not loyalty. Use n8n, Marvin, or LangChain to decouple your logic from your provider."
+      },
+      {
+        "label": "Prepare for DeepSeek API migration deadline",
+        "description": "The mandatory DeepSeek API migration closes July 24—11 days from now. There's a known alias mapping error that will silently degrade pipelines if not caught. Pull your team's code that touches DeepSeek API calls today, check the migration guide for the alias-mapping issue, and test against your staging environment before July 23."
+      },
+      {
+        "label": "Start tracking geopolitical AI fragmentation in your stack",
+        "description": "China's World AI Conference and the WAICO agreement signal that US/EU and China will diverge on AI governance, export controls, and model availability. Spend 20 minutes auditing which models your product depends on and which geographies each serves. This matters for regulatory risk, data residency, and future feature availability."
+      }
+    ]
   }
 ]
