@@ -3750,5 +3750,55 @@
         "description": "China's World AI Conference and the WAICO agreement signal that US/EU and China will diverge on AI governance, export controls, and model availability. Spend 20 minutes auditing which models your product depends on and which geographies each serves. This matters for regulatory risk, data residency, and future feature availability."
       }
     ]
+  },
+  {
+    "id": 77,
+    "date": "2026-07-19",
+    "title": "OpenAI's GPT-5.6 Series, Moonshot's Kimi K3, New Pricing Cliffs Hit",
+    "summary": "OpenAI shipped GPT-5.6 (Sol, Terra, Luna) in early July with three capability tiers; Moonshot AI released Kimi K3 on July 16; and Claude Fable 5 billing switches from included to usage credits on July 20, creating immediate cost headwinds for existing Claude users. New models arrive every 4 days across labs, but the bigger story is cost compression and cost structure shifting—not feature parity.",
+    "trends": [
+      {
+        "headline": "OpenAI GPT-5.6 public launch completes July",
+        "detail": "Sol (flagship agentic for coding, biology, cybersecurity), Terra (GPT-5.5 performance at half cost), and Luna (speed and affordability focus) went public July 9 after government safety evaluation. No independent benchmarks published yet; Musk's Grok characterization was internal eval only."
+      },
+      {
+        "headline": "Moonshot AI Kimi K3 released July 16",
+        "detail": "Latest frontier model release tracked. Part of accelerating cadence—new AI models now ship every 4 days on average across all labs combined, driven by quarterly enterprise budget cycles and Q3 procurement windows."
+      },
+      {
+        "headline": "Claude Fable 5 billing cliff arrives July 20",
+        "detail": "Free inclusion in Pro, Max, Team plans ends July 20. Starting July 20, Fable 5 shifts to usage-based credits at $10/M input, $50/M output tokens—double the cost of Opus 4.8. Existing users need to update prompts or switch models by end of week."
+      },
+      {
+        "headline": "China's ByteDance shutting Doubao agents July 15",
+        "detail": "345 million monthly active users lose agent features due to new CAC regulation requiring instant-exit mechanisms. Doubao data goes read-only until October 15, then permanent deletion. ByteDance and Alibaba both rebuilding agent architectures from scratch to comply rather than retrofitting."
+      },
+      {
+        "headline": "Cost compression and agentic performance dominate competition",
+        "detail": "Nearly every major lab shipped more affordable inference options in July. Price-performance ratios tripled vs. twelve months ago. Labs competing hardest on multi-step tool use, memory management, and planning reliability—where enterprise demand concentrates."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit Claude Fable 5 usage before July 20",
+        "description": "Check how many tokens your team uses in Fable 5 per week. If total cost exceeds your budget at the new $10/$50 rate, test Sonnet 5 or Opus 4.8 as drop-in replacements on your top three use cases. Set up cost alerts in your API dashboard by July 19."
+      },
+      {
+        "label": "Run competitive benchmarks on GPT-5.6 Sol this week",
+        "description": "Test Sol (not Terra or Luna) on your hardest coding, reasoning, or biology tasks against Claude Opus 4.8 and Grok 4.5. Sol is agentic-class; collect 3-5 real work samples and time generation + accuracy. Share results with engineering leads by Monday."
+      },
+      {
+        "label": "Map product workflow AI tool gaps before August 1",
+        "description": "Identify your biggest bottleneck: discovery, prioritization, roadmapping, analytics, or writing. Pick one AI tool per workflow stage, not an all-in-one platform. Test one tool on real PM work for one week, then commit or iterate. White House voluntary AI standards deadline is August 1."
+      },
+      {
+        "label": "Document agent feature deprecation plans if applicable",
+        "description": "If your product relies on AI agents or persistent memory systems for users, review China's new anthropomorphic AI rules (effective July 15 globally for Chinese users). Map what needs to change if you serve Chinese users: anti-addiction, instant-exit, usage notification requirements."
+      },
+      {
+        "label": "Set up model version pinning and fallback logic",
+        "description": "With new models shipping every 4 days and pricing/availability shifting weekly, pin API calls to specific model versions and set fallback logic to a secondary model. Test failover once before August 1. Cost surprises will hit teams without fallback plans."
+      }
+    ]
   }
 ]
