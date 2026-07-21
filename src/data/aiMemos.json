@@ -3850,5 +3850,55 @@
         "description": "Add Huawei Atlas 950 specifications to your Q4 2026 compute procurement tracking. If you operate in regions under export restrictions or prioritize vendor diversification, alert procurement and engineering teams to track Q4 launch timing and benchmark independent testing before availability."
       }
     ]
+  },
+  {
+    "id": 79,
+    "date": "2026-07-21",
+    "title": "Chinese AI models surge while chip stocks crater on capex questions",
+    "summary": "A Chinese open-weight model sparked the worst week for chip stocks since April, forcing investors to question the $725 billion in AI infrastructure spending. Chinese AI providers now control 45% of OpenRouter traffic, up from 2% last year, while Moonshot AI's Kimi K3 released July 16 is driving major adoption shifts. For founders and engineers, this signals both opportunity in Chinese models and urgent need to evaluate cost-performance tradeoffs in model selection.",
+    "trends": [
+      {
+        "headline": "China's Kimi K3 dominates frontier model releases this week",
+        "detail": "Moonshot AI released Kimi K3 on July 16, 2026, becoming the most recent tracked frontier model. Chinese providers now serve 45% of OpenRouter traffic (up from <2% one year ago), reflecting both capability parity with US models and dramatic cost advantages. This shift pressures chipmakers and accelerates multiregional deployment strategies."
+      },
+      {
+        "headline": "OpenAI's GPT-5.6 family establishes three-tier pricing model",
+        "detail": "Released July 9, the Sol (flagship coding/agentic), Terra (everyday GPT-5.5 performance at 50% cost), and Luna (budget tier below OpenAI production models) create clear job-to-model matching. Terra pricing matches Claude Sonnet 4.6, making mid-tier model selection critical for cost-conscious builders."
+      },
+      {
+        "headline": "Meta's Muse Spark 1.1 challenges Opus on agentic benchmarks",
+        "detail": "Mark Zuckerberg announced Muse Spark 1.1 as a 1M-token-context agentic model claiming #1 on MCP Atlas, JobBench, and Finance Agent V2 evals. First Meta paid developer API ($20 free credits, US-only) ships with desktop/browser/mobile computer use and parallel subagent delegation, directly competing with Anthropic's Opus 4.8."
+      },
+      {
+        "headline": "Chip stocks collapse amid doubts about AI infrastructure ROI",
+        "detail": "Chinese open-weight model releases triggered the worst chip-stock week since April as investors questioned whether $725 billion in AI capex is delivering measurable returns. This creates pressure on closed-model developers to prove differentiation beyond raw inference cost."
+      },
+      {
+        "headline": "Anthropic's Claude Sonnet 5 sets June 30 baseline for multimodal performance",
+        "detail": "Claude Sonnet 5 launched June 30 with introductory pricing ($2 input/$10 output per million tokens through August 31). Anthropic's Science Workbench connects Claude Opus 4.8 to 60+ scientific databases; AI for Science grants ($30K credits, 50 projects) deadline was July 15, attracting academic and biotech researchers."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Audit your model stack by cost-performance ratio",
+        "description": "Compare your current model choices (Sol vs Terra vs Luna for OpenAI; Claude Sonnet vs Opus; Kimi K3 for latency-sensitive work) against benchmarks published this week. Document token volume and latency requirements for each use case. Update internal runbooks to match cheapest viable model per job. Save 20-40% on inference costs."
+      },
+      {
+        "label": "Test Muse Spark 1.1's agentic capabilities immediately",
+        "description": "Meta's new $20 free credits cover basic agent workflows. Run your top 2-3 complex reasoning tasks (agent decision trees, code generation loops, customer support multi-turn) against Muse Spark vs your current Opus baseline. Document latency and output quality deltas. Use 15 minutes of credits to benchmark."
+      },
+      {
+        "label": "Review Chinese model availability for your product tier",
+        "description": "Kimi K3 now dominates OpenRouter traffic. Evaluate whether Kimi, Xiaomi MiMo-V2-Pro, or DeepSeek models can serve non-US markets, edge cases, or cost-sensitive workloads. Check regulatory/export restrictions for your region. Map one low-risk feature to Chinese model inference this week if feasible."
+      },
+      {
+        "label": "Document jailbreak patterns from Fable 5 incident",
+        "description": "Anthropic's Fable 5 suspension (June 12-July 1) over a prompt-injection jailbreak now drives pre-release security frameworks across labs. Review your safety evals and red-teaming processes. Download Anthropic's published jailbreak framework (co-developed with Amazon, Google, Microsoft) and map one category of prompt adversarialism to your test suite."
+      },
+      {
+        "label": "Lock in Claude pricing before August 31 rate reset",
+        "description": "Claude Sonnet 5 introductory pricing ($2 input/$10 output) expires August 31. If you're planning production Claude migration, finalize contracts now. Standard pricing reverts August 1. Calculate total annual Claude spend at current volumes and plan budget adjustments for Q3 onwards."
+      }
+    ]
   }
 ]
