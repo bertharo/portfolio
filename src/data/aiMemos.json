@@ -3900,5 +3900,51 @@
         "description": "Claude Sonnet 5 introductory pricing ($2 input/$10 output) expires August 31. If you're planning production Claude migration, finalize contracts now. Standard pricing reverts August 1. Calculate total annual Claude spend at current volumes and plan budget adjustments for Q3 onwards."
       }
     ]
+  },
+  {
+    "id": 80,
+    "date": "2026-07-22",
+    "title": "Google Ships Gemini 3.6 Flash, Confirms Gemini 4 Pretraining Underway",
+    "summary": "Google released three new Gemini models on July 21 (3.6 Flash, 3.5 Flash-Lite, and a security-focused 3.5 Flash Cyber variant) while conspicuously delaying Gemini 3.5 Pro again and confirming it has started its most ambitious pretraining run yet for Gemini 4. For professionals shipping production AI, this matters because Flash models at lower cost ($1.50/$7.50 per M tokens) are where actual volume runs, while the Pro delay signals competitive pressure from OpenAI and Anthropic.",
+    "trends": [
+      {
+        "headline": "Google's three-tier Gemini Flash strategy over Pro",
+        "detail": "Google released Gemini 3.6 Flash with improved reasoning (DeepSWE jumped 37→49), a 3.5 Flash-Lite tier at $0.30/$2.50 per M tokens, and a government-only 3.5 Flash Cyber variant. Harvey and Hebbia are early adopters. This efficiency-first move addresses how most enterprise AI calls are routine tasks that don't need flagship reasoning."
+      },
+      {
+        "headline": "Gemini 3.5 Pro delayed again amid Gemini 4 prep",
+        "detail": "Google publicly acknowledged Gemini 3.5 Pro missed its target multiple times and still isn't shipping. On the same announcement, it confirmed Gemini 4 pretraining has begun as its most ambitious run yet. This pattern signals reallocation of engineering resources toward next-generation capability rather than gap-filling flagship releases."
+      },
+      {
+        "headline": "Anthropic and OpenAI ramp lobbying spend",
+        "detail": "Federal filings show Anthropic spent $1.97M in Q2 2026 (up 26% QoQ), outspending Nvidia and nearly matching Oracle. OpenAI spent $1.2M (up 18%). Combined AI-lab spend hit $3.17M for the quarter, up 23% from Q1. Priority issues include cybersecurity, copyright, cloud computing, and defense procurement."
+      },
+      {
+        "headline": "Meta AI moderation beats human raters at scale",
+        "detail": "Meta reports its AI moderation system produces 13% fewer errors and finds 10% more policy violations than human moderators. However, some Instagram and Facebook users report incorrect account deletions, showing that better average accuracy at massive scale still generates individual wrong decisions that erode trust."
+      },
+      {
+        "headline": "Substack partners with Pangram for AI detection",
+        "detail": "Substack launched a feature letting users scan text over 100 words to estimate AI-generated content using Pangram's detector. Independent research from Epoch AI found detectors like Pangram miss up to 18% of AI text written in an imitated style, so results should be treated as estimates rather than ground truth."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Evaluate Gemini 3.6 Flash for cost-sensitive workloads",
+        "description": "Run a 15-minute test comparing Gemini 3.6 Flash ($1.50/$7.50) to your current model on a routine task (classification, summarization, or structured extraction). Log latency, cost per 1,000 queries, and output quality. If savings exceed 20% with acceptable quality, plan a pilot on one production feature."
+      },
+      {
+        "label": "Audit your AI moderation assumptions",
+        "description": "If you rely on any moderation system—AI or human—review recent false positives and false negatives from the past month. Map error patterns to user segments. Check whether appeals processes exist and are fast. Even systems with better average accuracy can create PR risk if individual mistakes go unaddressed."
+      },
+      {
+        "label": "Test AI detection tools with realistic samples",
+        "description": "If you're planning to surface AI-generated content warnings to users, test your detector on real samples from your platform. Use Pangram via Substack's feature or Perplexity to understand its miss rate on your content style. Document limitations in product copy so users set correct expectations."
+      },
+      {
+        "label": "Benchmark your team's AI stack against new baselines",
+        "description": "Pull your team's two most-used prompts (customer interviews, code generation, or copy drafting). Run them on Gemini 3.6 Flash, Claude Sonnet 5, and OpenAI GPT-5.6 Sol. Record cost and quality in a shared spreadsheet. Use results to decide whether your current stack is still optimal or needs rotation."
+      }
+    ]
   }
 ]
