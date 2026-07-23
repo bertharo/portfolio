@@ -3946,5 +3946,55 @@
         "description": "Pull your team's two most-used prompts (customer interviews, code generation, or copy drafting). Run them on Gemini 3.6 Flash, Claude Sonnet 5, and OpenAI GPT-5.6 Sol. Record cost and quality in a shared spreadsheet. Use results to decide whether your current stack is still optimal or needs rotation."
       }
     ]
+  },
+  {
+    "id": 81,
+    "date": "2026-07-23",
+    "title": "Google Gemini 3.6 Flash just shipped. Model warfare intensifies.",
+    "summary": "Google released Gemini 3.6 Flash on July 21, capping a month where OpenAI, Anthropic, Meta, and xAI all shipped new frontier models within weeks. The competitive pace has shifted from benchmark chasing to price, speed, and deployment fit—forcing teams to build flexible model infrastructure instead of betting on single winners.",
+    "trends": [
+      {
+        "headline": "July model releases: everyone dropped at once",
+        "detail": "OpenAI launched GPT-5.6 family (Sol flagship for coding/cybersecurity, Terra for everyday tasks at half cost, Luna for speed), Anthropic shipped Claude Sonnet 5, Meta released Muse Spark 1.1 with 1M-token context and computer use, xAI launched Grok 4.5, and Google just released Gemini 3.6 Flash on July 21. This pace—27 tracked launches in July alone—means choosing one model is already the wrong strategy."
+      },
+      {
+        "headline": "Agentic capabilities became table stakes overnight",
+        "detail": "Meta's Muse Spark 1.1 ships with parallel subagent delegation and computer use across desktop, browser, and mobile. Grok 4.5 pushes coding efficiency claims with lower token use per solved task. OpenAI's Sol targets agentic workflows for biology and cybersecurity. Teams shipping agent-heavy products now have to evaluate whether to retrain, switch models, or wait for their current stack to lag the frontier."
+      },
+      {
+        "headline": "Anthropic's Q2 lobbying spend hit $1.97M, outspending Nvidia",
+        "detail": "Federal filings show Anthropic increased Q2 lobbying spend 26% quarter-over-quarter to $1.97M, outspending Nvidia ($1.8M reported range) and nearly matching Oracle at $2M. OpenAI spent $1.2M (up 18%). Combined AI-lab spend hit $3.17M for the quarter, up 23% from Q1. This signals regulatory leverage battles heating up before government AI model standards deadline August 1."
+      },
+      {
+        "headline": "Meta's AI moderation wrongly deleted accounts, auto-appeals failed",
+        "detail": "New York Times reported Instagram and Facebook users lost accounts built over years after Meta's automated moderation system made false positive calls. Some accounts with nearly 1M followers were restored only after journalist intervention. Meta counters that newer AI tools make 13% fewer mistakes than humans, but the incidents highlight the gap between benchmark performance and production reliability at scale."
+      },
+      {
+        "headline": "Model fit matters more than model scores",
+        "detail": "Industry analysis of July launches concludes the real shift is from 'best model wins' to 'best fit wins.' Price, speed, access, inference cost per task, and local deployment now matter as much as raw benchmark leaderboards. Teams building for Q3-Q4 need modular architectures that let them swap models without full rewrites."
+      }
+    ],
+    "actionItems": [
+      {
+        "label": "Test Gemini 3.6 Flash in your stack today",
+        "description": "Google's new release dropped July 21 and may be cheaper or faster than your current baseline for certain workloads. Run your core task through Gemini 3.6 Flash, GPT-5.6 Sol, and Claude Sonnet 5 in parallel, measure cost, latency, and quality, then decide if switching any production endpoints makes sense. Spend 20 minutes on this if you're already doing inference; spend 30 minutes if you need to set up API keys."
+      },
+      {
+        "label": "Map your infrastructure to swappable model slots",
+        "description": "With new frontier models shipping every 1-2 weeks, infrastructure that hardcodes a single model is a tech debt liability. If you're not already using an abstraction layer (LiteLLM, Portkey, or similar), sketch out how you'd swap models if your current baseline got cheaper or out-performed tomorrow. This takes 20 minutes on whiteboard or Figma; actual refactoring is separate."
+      },
+      {
+        "label": "Audit your product for agentic compute savings",
+        "description": "xAI's Grok 4.5 claims to solve SWE-Bench tasks using a quarter of the tokens Anthropic's Opus 4.8 needs, at $2/$6 per million tokens. If your product does multi-step reasoning, code generation, or task chaining, run 3-5 representative workflows through both your current model and Grok 4.5. Token savings compound fast at scale; 25% fewer tokens at 1M daily requests is $500K+ annual savings."
+      },
+      {
+        "label": "Check if Anthropic lobbying signals regulatory shifts",
+        "description": "Anthropic's lobbying spend jumped 26% in Q2, likely timed to the White House AI model standards deadline August 1. Track whether their priorities (copyright, cybersecurity, defense procurement per filings) land in final standards. If they do, it may change your compliance or safety roadmap. Set a reminder to scan official announcements August 1-5; invest 15 minutes max."
+      },
+      {
+        "label": "Monitor Meta's moderation improvements in your own UGC",
+        "description": "If your product relies on Meta's automated moderation or feeds user-generated content through similar systems, pull your last week of moderation logs and spot-check 10-20 edge cases (borderline commercial posts, reused media, low-context appeals). Document any false positives so you can track if newer Meta systems (13% fewer mistakes per their claim) actually change production rates. This is a 30-minute audit if you have logs available."
+      }
+    ]
   }
 ]
